@@ -1,0 +1,244 @@
+<head>
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="theme.css">-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Majestic Cove</a>
+
+            <ul class="navbar-nav mr-auto">
+                
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+
+            </ul>
+
+            <template v-if="!loggedin">
+                <div class="ml-auto">
+                    <button id="login" class="btn btn-outline-primary">Login</button>
+                    <button id="register" class="btn btn-primary">Register</button>
+
+                    <b-popover target="login" triggers="focus" placement="auto" title="Login">
+                        <b-alert show v-bind:variant="login_response_variant" v-if="login_response">{{login_response}}</b-alert>
+                        <div class="form-row">
+                            <div class="col-sm-3 col-form-label">
+                                <label for="login_user">Username</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input id="login_user" class="form-control" v-model="login_user" @keydown.enter="login">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-3 col-form-label">
+                                <label for="login_pass">Password</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" id="login_pass" class="form-control" v-model="login_pass" @keydown.enter="login">
+                            </div>
+                        <div>
+                        <button class="btn btn-success mt-2" v-on:click="login">Login</button>
+                    </b-popover>
+
+                    <b-popover target="register" triggers="focus" placement="auto" title="Register">
+                        <b-alert show v-bind:variant="register_response_variant" v-if="register_response">{{register_response}}</b-alert>
+                        <div class="form-row">
+                            <div class="col-sm-3 col-form-label">
+                                <label for="register_user">Username</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input id="register_user" class="form-control" v-model="register_user" @keydown.enter="register">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-3 col-form-label">
+                                <label for="register_pass">Password</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" id="register_pass" class="form-control" v-model="register_pass" @keydown.enter="register">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-3 col-form-label">
+                                <label for="register_age">Age</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="number" min="0" max="99" id="register_age" class="form-control" v-model="register_age" @keydown.enter="register">
+                            </div>
+                        </div>
+                        <button class="btn btn-success mt-2" v-on:click="register">Register</button>
+                    </b-popover>
+                </div>
+            </template>
+            <template v-else>
+                <div class="ml-auto">
+                    <div class="text-primary mr-2" style="display: inline-block">{{username}}</div>
+                    <button class="btn btn-primary" v-on:click="logout">Log Out</button>
+                </div>
+            </template>
+        </nav>
+        <template v-if="showDebugData">
+            Login username = {{login_user}}<br>
+            Login password = {{login_pass}}<br>
+            Register username = {{register_user}}<br>
+            Register password = {{register_pass}}<br>
+            Register age = {{register_age}}<br>
+            Register Response = {{register_response}}<br>
+            Login Response = {{login_response}}<br>
+            Username = {{username}}<br>
+            User ID = {{userid}}<br>
+            Session ID = {{ssid}}<br>
+        </template>
+    </div>
+    <script>
+        const COOKIE_LIFETIME_DAYS = 1;
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function deleteCookie(cname){
+            setCookie(cname, null, 0);
+        }
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                login_user: null,
+                login_pass: null,
+                register_user: null,
+                register_pass: null,
+                register_age: null,
+                register_response: null,
+                register_response_variant: null,
+                login_response: null,
+                username: getCookie("username"),
+                userid: getCookie("userid"),
+                ssid: getCookie("ssid"),
+                showDebugData: true
+            },
+            computed: {
+                loggedin: function(){
+                    return this.userid && this.ssid;
+                }
+            },
+            methods: {
+                login(){
+                    console.log("Logging in...")
+                    var username = this.login_user
+                    Vue.http.post("/login", {
+                        user: this.login_user,
+                        pass: this.login_pass
+                    }).then(function(data){
+                        console.log("Login finished! Received data:"); console.log(data);
+                        app.userid = data.body.userid;
+                        app.ssid = data.body.ssid
+                        app.username = username
+                        console.log("Username = "+username)
+                        app.login_response = ""
+                        //app.login_response = data.body.message;
+                        app.login_response_variant = "success";
+
+                        setCookie("username", username, COOKIE_LIFETIME_DAYS);
+                        setCookie("userid", data.body.userid, COOKIE_LIFETIME_DAYS);
+                        setCookie("ssid", data.body.ssid, COOKIE_LIFETIME_DAYS);
+                    },function(data){
+                        console.log("Something went wrong! Details:"); console.log(data);
+                        app.login_response = data.body.message;
+                        app.login_response_variant = "danger";
+                    });
+                },
+                register(){
+                    console.log("Registering...");
+                    console.log(this.register_user); console.log(this.register_pass); console.log(this.register_age)
+                    Vue.http.post("/register", {
+                        user: this.register_user,
+                        pass: this.register_pass,
+                        age: this.register_age
+                    }).then(function(data){
+                        console.log("Register finished! Received data:"); console.log(data);
+                        app.register_response = data.body.message;
+                        app.register_response_variant = "success";
+                    },function(data){
+                        console.log("Something went wrong! Details:"); console.log(data);
+                        app.register_response = data.body.message;
+                        app.register_response_variant = "danger";
+                    });
+                },
+                logout(){
+                    this.userid = null
+                    this.ssid = null
+                    deleteCookie("username")
+                    deleteCookie("userid")
+                    deleteCookie("ssid")
+                }
+            }
+        });
+    </script>
+</body>

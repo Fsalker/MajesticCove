@@ -1,0 +1,2 @@
+-Login transition (when the navbar changes, from Login/Register to Log Out)
+-Fucking login callback hell
