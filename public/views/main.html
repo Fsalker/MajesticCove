@@ -2,64 +2,16 @@
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
     <!--<link rel="stylesheet" type="text/css" href="theme.css">-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>-->
 </head>
 
 <body>
     <div id="app">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a class="navbar-brand" href="#">Majestic Cove</a>
-
-            <ul class="navbar-nav mr-auto">
-                
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-
-            </ul>
 
             <template v-if="!loggedin">
                 <div class="ml-auto">
@@ -84,7 +36,10 @@
                                 <input type="password" id="login_pass" class="form-control" v-model="login_pass" @keydown.enter="login">
                             </div>
                         <div>
-                        <button class="btn btn-success mt-2" v-on:click="login">Login</button>
+                        <div class="mt-2">
+                            <button class="btn btn-success" v-on:click="login">Login</button>
+                            <img src="Loading.gif" v-if="showLoadingLogin">
+                        </div>
                     </b-popover>
 
                     <b-popover target="register" triggers="focus" placement="auto" title="Register">
@@ -113,14 +68,22 @@
                                 <input type="number" min="0" max="99" id="register_age" class="form-control" v-model="register_age" @keydown.enter="register">
                             </div>
                         </div>
-                        <button class="btn btn-success mt-2" v-on:click="register">Register</button>
+                        <div class="mt-2">
+                            <button class="btn btn-success" v-on:click="register">Register</button>
+                            <img src="Loading.gif" v-if="showLoadingRegister">
+                        </div>
                     </b-popover>
                 </div>
             </template>
             <template v-else>
                 <div class="ml-auto">
-                    <div class="text-primary mr-2" style="display: inline-block">{{username}}</div>
-                    <button class="btn btn-primary" v-on:click="logout">Log Out</button>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <div class="nav-link text-primary" style="display: inline-block">{{username}}</div>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary" v-on:click="logout">Log Out</button>
+                        </li>
                 </div>
             </template>
         </nav>
@@ -133,7 +96,6 @@
             Register Response = {{register_response}}<br>
             Login Response = {{login_response}}<br>
             Username = {{username}}<br>
-            User ID = {{userid}}<br>
             Session ID = {{ssid}}<br>
         </template>
     </div>
@@ -179,43 +141,91 @@
                 register_response_variant: null,
                 login_response: null,
                 username: getCookie("username"),
-                userid: getCookie("userid"),
                 ssid: getCookie("ssid"),
-                showDebugData: true
+                showDebugData: true,
+                showLoadingLogin: false,
+                showLoadingRegister: false
             },
             computed: {
                 loggedin: function(){
-                    return this.userid && this.ssid;
+                    return this.ssid;
                 }
             },
             methods: {
                 login(){
-                    console.log("Logging in...")
-                    var username = this.login_user
-                    Vue.http.post("/login", {
+                    this.showLoadingLogin = true;
+
+                    data = {
                         user: this.login_user,
                         pass: this.login_pass
-                    }).then(function(data){
-                        console.log("Login finished! Received data:"); console.log(data);
-                        app.userid = data.body.userid;
-                        app.ssid = data.body.ssid
-                        app.username = username
-                        console.log("Username = "+username)
-                        app.login_response = ""
-                        //app.login_response = data.body.message;
-                        app.login_response_variant = "success";
+                    }
 
-                        setCookie("username", username, COOKIE_LIFETIME_DAYS);
-                        setCookie("userid", data.body.userid, COOKIE_LIFETIME_DAYS);
-                        setCookie("ssid", data.body.ssid, COOKIE_LIFETIME_DAYS);
-                    },function(data){
-                        console.log("Something went wrong! Details:"); console.log(data);
-                        app.login_response = data.body.message;
-                        app.login_response_variant = "danger";
-                    });
+                    var req = new XMLHttpRequest();
+                    req.onreadystatechange = function(){
+                        if(this.readyState == 4){
+                            app.showLoadingLogin = false;
+                            console.log(this.response);
+                            if(this.status == 200){
+                                res = JSON.parse(this.response)
+                                app.login_pass = null
+
+                                app.ssid = res.ssid
+                                app.username = data.user
+                                setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
+                                setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
+
+                                app.login_response = "Logged in successfully!"
+                                app.login_response_variant = "success";
+                            }
+                            else {
+                                app.login_response = this.responseText
+                                app.login_response_variant = "danger";
+                            }
+                        }
+                    }
+
+                    req.open("POST", "login")
+                    req.setRequestHeader("content-type", "application/json")
+                    req.send(JSON.stringify(data));
                 },
                 register(){
-                    console.log("Registering...");
+                    this.showLoadingRegister = true;
+
+                    data = {
+                        user: this.register_user,
+                        pass: this.register_pass,
+                        age: this.register_age
+                    }
+
+                    var req = new XMLHttpRequest();
+                    req.onreadystatechange = function(){
+                        if(this.readyState == 4){
+                            app.showLoadingRegister = false
+                            if(this.status == 200){
+                                res = JSON.parse(this.response)
+
+                                app.ssid = res.ssid
+                                app.username = data.user
+
+                                setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
+                                setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
+
+                                app.register_response = "Registered successfully!"
+                                app.register_response_variant = "danger"
+                            }
+                            else {
+                                app.register_response = this.responseText
+                                app.register_response_variant = "danger"
+                            }
+                        }
+                    }
+                    req.open("POST", "/register")
+                    req.setRequestHeader("content-type", "application/json")
+                    console.log(data)
+                    req.send(JSON.stringify(data))
+
+
+                    /*console.log("Registering...");
                     console.log(this.register_user); console.log(this.register_pass); console.log(this.register_age)
                     Vue.http.post("/register", {
                         user: this.register_user,
@@ -229,13 +239,17 @@
                         console.log("Something went wrong! Details:"); console.log(data);
                         app.register_response = data.body.message;
                         app.register_response_variant = "danger";
-                    });
+                    });*/
                 },
                 logout(){
-                    this.userid = null
+                    var req = new XMLHttpRequest();
+                    req.open("POST", "/logout")
+                    req.setRequestHeader("content-type", "application/json")
+                    req.send(JSON.stringify({ssid: this.ssid}));
+
+                    this.username = null
                     this.ssid = null
                     deleteCookie("username")
-                    deleteCookie("userid")
                     deleteCookie("ssid")
                 }
             }
