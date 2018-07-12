@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Majestic Cove Requirements
+
+        We need a concept before we start working on it, right?
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            User Accounts
+
+    >Let users create accounts and use them to post new definitions & upvote other definitions.
+
+    -Register
+    -Login
+    -Password Recovery
+    -Authentification (username + session id)
+    -Karma
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            Words
+
+    >Search for a word's definitions. Upvote and post new definitions.
+
+    -Definitions
+    -Author
+    -Thumbs up & down 
+        ie: 37 out of 52 users (71%) have appreciated this definition
+    -Auto correct (Levenshtein distance)
+
+--------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,63 @@
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Back End
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+        [x]     /Register
+        [x]     /Login
+        [x]     /Logout
+        [ ]     /addDefinition
+        [ ]     /getWordDefinitions
+        [ ]     /voteDefinition
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Front End
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+        [x]     /Register
+        [x]     /Login
+        [x]     /Logout
+        [ ]     /addDefinition
+        [ ]     /getWordDefinitions
+        [ ]     /voteDefinition
+        [ ]     /voteDefinition
+        [ ]     Karma system:
+
+                    >The usernames are colored based on their user's karma
+
+                KARMA    -∞                   -10            -3            0            +3           +10                               +∞
+            ---------------------------------------------------------------------------------------------------------------------------------
+                COLOR                       wine red         red         black         green         gold    
+        [ ]     /voteDefinition
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+        [x] Remove 'age' from front end & back end
+        [x] Modularise the code 
+
+
+            Help pls
+        [ ] Add [{wordId: string, likes: boolean}] to 'votes' in User schema. But how???
+        [ ] Asynchronicity / "threading" issue
+            ie 1: (happy scenario) 
+                -user A registers with an username. the username is available. our request is pending...
+                -user B sends a /register with the same username. the username is available. we register this username (for user B)
+                -user A's request continues and we try registering. oh no! the username is already taken. but we've already checked that it was available!!! what do we do now?
+
+                    what. do. we. do. now?
+
+            ie 2: (less happy scenario)
+                -user sends requests A: thumbs up for definition X. the definition hasn't already been thumbed up. our request is pending...
+                -user sends requests B: thumbs up for definition X. the definition hasn't already been thumbed up. our request is pending...
+                -request A proceeds to +1 definition X. Now we won't be able to give thumbs up for definition X
+                -request B proceeds to +1 definition X, because we've already checked that the definition hadn't been thumbed up. Now we have two thumbs up from the same user. bad, bad, bad.
+
+                    what. do. we. do. now?
+
+                    ??????????????????????
+
+
+                

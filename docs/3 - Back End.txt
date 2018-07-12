@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Back End
+
+        All API's go here.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /Register
+
+    >Registers an user
+
+    Input:
+        user: string
+        pass: string
+
+    Output:
+        [!200] error message: string
+         [200] {ssid: string}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /Login
+
+    >Logs in an user
+
+    Input:
+        user: string
+        pass: string
+
+    Output:
+        [!200] error message: string
+         [200] {ssid: string}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /Logout
+
+    >Logs out an user and destroys the ssid
+
+    Input:
+        user: string
+        ssid: string
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /addDefinition
+
+    >User adds a new word definition
+
+    Input:
+        user: string
+        ssid: string
+        word: string
+        definition: string
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /getWordDefinitions
+
+    >Get all definitions for a given word. If there are no definitions, an auto-correct is attempted 
+        (hence why we also answer back with the 'word' string)
+
+    Input:
+        word: string
+
+    Output:
+        [!200] error message: string
+         [200] [{wordid: string, word: string, definition: string, author: string, authorKarma: int}]
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /voteDefinition
+
+    >User thumbs up or thumbs down a definition
+
+    Input:
+        user: string
+        ssid: string
+        wordId: string
+        likes: bool
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+[!200] - error during request
+ [200] - request succesful
+
+--------------------------------------------------------------------------------------------------------------------------------

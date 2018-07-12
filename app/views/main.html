@@ -60,14 +60,6 @@
                                 <input type="password" id="register_pass" class="form-control" v-model="register_pass" @keydown.enter="register">
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="col-sm-3 col-form-label">
-                                <label for="register_age">Age</label>
-                            </div>
-                            <div class="col-sm-9">
-                                <input type="number" min="0" max="99" id="register_age" class="form-control" v-model="register_age" @keydown.enter="register">
-                            </div>
-                        </div>
                         <div class="mt-2">
                             <button class="btn btn-success" v-on:click="register">Register</button>
                             <img src="Loading.gif" v-if="showLoadingRegister">
@@ -92,7 +84,6 @@
             Login password = {{login_pass}}<br>
             Register username = {{register_user}}<br>
             Register password = {{register_pass}}<br>
-            Register age = {{register_age}}<br>
             Register Response = {{register_response}}<br>
             Login Response = {{login_response}}<br>
             Username = {{username}}<br>
@@ -136,7 +127,6 @@
                 login_pass: null,
                 register_user: null,
                 register_pass: null,
-                register_age: null,
                 register_response: null,
                 register_response_variant: null,
                 login_response: null,
@@ -193,8 +183,7 @@
 
                     data = {
                         user: this.register_user,
-                        pass: this.register_pass,
-                        age: this.register_age
+                        pass: this.register_pass
                     }
 
                     var req = new XMLHttpRequest();
@@ -211,7 +200,7 @@
                                 setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
 
                                 app.register_response = "Registered successfully!"
-                                app.register_response_variant = "danger"
+                                app.register_response_variant = "success"
                             }
                             else {
                                 app.register_response = this.responseText
@@ -223,23 +212,6 @@
                     req.setRequestHeader("content-type", "application/json")
                     console.log(data)
                     req.send(JSON.stringify(data))
-
-
-                    /*console.log("Registering...");
-                    console.log(this.register_user); console.log(this.register_pass); console.log(this.register_age)
-                    Vue.http.post("/register", {
-                        user: this.register_user,
-                        pass: this.register_pass,
-                        age: this.register_age
-                    }).then(function(data){
-                        console.log("Register finished! Received data:"); console.log(data);
-                        app.register_response = data.body.message;
-                        app.register_response_variant = "success";
-                    },function(data){
-                        console.log("Something went wrong! Details:"); console.log(data);
-                        app.register_response = data.body.message;
-                        app.register_response_variant = "danger";
-                    });*/
                 },
                 logout(){
                     var req = new XMLHttpRequest();
@@ -251,6 +223,9 @@
                     this.ssid = null
                     deleteCookie("username")
                     deleteCookie("ssid")
+
+                    app.register_response = null
+                    app.login_response = null
                 }
             }
         });
