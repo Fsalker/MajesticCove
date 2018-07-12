@@ -16,8 +16,9 @@ HTML_RESPONSES[500] = "Error 500 has occurred."
 module.exports = {
     VIEWS_PATH: "./app/views/",
     HTML_RESPONSES: HTML_RESPONSES,
-    databaseURL: "mongodb://localhost:27017/MajesticCoveDB";
+    databaseURL: "mongodb://localhost:27017/MajesticCoveDB",
     log: function(msg){
         console.log(msg);
-    }
+    },
+    ID_STRING_LENGTH: 24
 }

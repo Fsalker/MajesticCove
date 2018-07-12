@@ -87,6 +87,7 @@
             Register Response = {{register_response}}<br>
             Login Response = {{login_response}}<br>
             Username = {{username}}<br>
+            User ID = {{userid}}<br>
             Session ID = {{ssid}}<br>
         </template>
     </div>
@@ -131,6 +132,7 @@
                 register_response_variant: null,
                 login_response: null,
                 username: getCookie("username"),
+                userid: getCookie("userid"),
                 ssid: getCookie("ssid"),
                 showDebugData: true,
                 showLoadingLogin: false,
@@ -138,7 +140,7 @@
             },
             computed: {
                 loggedin: function(){
-                    return this.ssid;
+                    return this.ssid && this.userid;
                 }
             },
             methods: {
@@ -160,8 +162,10 @@
                                 app.login_pass = null
 
                                 app.ssid = res.ssid
+                                app.userid = res.userid
                                 app.username = data.user
                                 setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
+                                setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
                                 setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
 
                                 app.login_response = "Logged in successfully!"
@@ -190,13 +194,16 @@
                     req.onreadystatechange = function(){
                         if(this.readyState == 4){
                             app.showLoadingRegister = false
+                            console.log(this.response);
                             if(this.status == 200){
                                 res = JSON.parse(this.response)
 
                                 app.ssid = res.ssid
+                                app.userid = res.userid
                                 app.username = data.user
 
                                 setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
+                                setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
                                 setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
 
                                 app.register_response = "Registered successfully!"
@@ -210,14 +217,13 @@
                     }
                     req.open("POST", "/register")
                     req.setRequestHeader("content-type", "application/json")
-                    console.log(data)
                     req.send(JSON.stringify(data))
                 },
                 logout(){
                     var req = new XMLHttpRequest();
                     req.open("POST", "/logout")
                     req.setRequestHeader("content-type", "application/json")
-                    req.send(JSON.stringify({ssid: this.ssid}));
+                    req.send(JSON.stringify({ssid: this.ssid, userid: this.userid}));
 
                     this.username = null
                     this.ssid = null

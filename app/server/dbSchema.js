@@ -8,9 +8,11 @@
 //                                                                  //
 // ================================================================ //
 
+var cfg = require("./config.js")
+
 module.exports = {
     createDatabase: function(dbo){
-        const DROP_COLLECTIONS = 0;
+        const DROP_COLLECTIONS = 1;
 
         var createCollections = function()
         {
@@ -18,7 +20,7 @@ module.exports = {
                 validator:{
                     $jsonSchema: {
                         bsonType: "object",
-                        required: ["username", "password"],
+                        required: ["username", "password", "votes", "karma"],
                         properties: {
                             username: {
                                 bsonType: "string",
@@ -52,7 +54,7 @@ module.exports = {
                 validator:{
                     $jsonSchema: {
                         bsonType: "object",
-                        required: ["word", "definition", "userid"],
+                        required: ["word", "definition", "userid", "rating"],
                         properties: {
                             word: {
                                 bsonType: "string",
@@ -62,6 +64,9 @@ module.exports = {
                             },
                             userid: {
                                 bsonType: "objectId",
+                            },
+                            rating: {
+                                bsonType: "int"
                             }
                         }
                     }
@@ -72,7 +77,7 @@ module.exports = {
         }
         
         if(DROP_COLLECTIONS)
-            dbo.dropCollection("users", createCollections)
+            dbo.dropDatabase("users", createCollections)
         else
             createCollections();
     }

@@ -10,9 +10,8 @@
 
     id*: objectId
     username*: string
-    password: string
-    age: int
-    ssid: string
+    password*: string
+    ssid*: string
     votes: arr [{wordId: objectId, likes: boolean}]
     karma: int 
         // Sum of all thumbs up & thumbs down of this user's definitions
@@ -24,6 +23,8 @@
     id*: objectId
     word: string
     definition: string
+    rating: int 
+        // Sum of all thumbs up & dumbs down
     userid: objectId 
         // The author's user id
 

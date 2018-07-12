@@ -27,5 +27,6 @@
     -Thumbs up & down 
         ie: 37 out of 52 users (71%) have appreciated this definition
     -Auto correct (Levenshtein distance)
+    -Add / View / Remove definitions
 
 --------------------------------------------------------------------------------------------------------------------------------

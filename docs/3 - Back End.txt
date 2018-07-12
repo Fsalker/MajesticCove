@@ -16,7 +16,7 @@
 
     Output:
         [!200] error message: string
-         [200] {ssid: string}
+         [200] {ssid: string, userid: string}
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@
 
     Output:
         [!200] error message: string
-         [200] {ssid: string}
+         [200] {ssid: string, userid: string}
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -53,10 +53,39 @@
     >User adds a new word definition
 
     Input:
-        user: string
+        userid: string
         ssid: string
         word: string
         definition: string
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /showMyDefinitions
+
+    >Get user's definitions
+
+    Input:
+        userid: string
+        ssid: string
+
+    Output:
+        [!200] error message: string
+         [200] [definition]
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /deleteMyDefinition
+
+    >Deletes an user's own definition
+
+    Input:
+        userid: string
+        ssid: string
+        definitionid: string
 
     Output:
         [!200] error message: string
@@ -74,7 +103,7 @@
 
     Output:
         [!200] error message: string
-         [200] [{wordid: string, word: string, definition: string, author: string, authorKarma: int}]
+         [200] [definition]
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -83,14 +112,18 @@
     >User thumbs up or thumbs down a definition
 
     Input:
-        user: string
+        userid: string
         ssid: string
-        wordId: string
+        definitionId: string
         likes: bool
 
     Output:
         [!200] error message: string
          [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+    definition = {_id: string, word: string, definition: string, rating: int, userid: string, userkarma: int}
 
 --------------------------------------------------------------------------------------------------------------------------------
 

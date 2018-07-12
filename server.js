@@ -47,7 +47,22 @@ function serverHandler(req, res){
                 webHandler.registerHandler(req, res, dbo)
                 break;
             case "/logout":
-                webHandler.logoutHandler(req, res, dbo) 
+                webHandler.logoutHandler(req, res, dbo)
+                break;
+            case "/addDefinition":
+                webHandler.addDefinitionHandler(req, res, dbo)
+                break;
+            case "/showMyDefinitions":
+                webHandler.showMyDefinitionsHandler(req, res, dbo)
+                break;
+            case "/deleteMyDefinition":
+                webHandler.deleteMyDefinitionHandler(req, res, dbo)
+                break;
+            case "/getWordDefinitions":
+                webHandler.getWordDefinitionsHandler(req, res, dbo)
+                break;
+            case "/voteDefinition":
+                webHandler.voteDefinitionHandler(req, res, dbo)
                 break;
             default:
                 throws.throwResponse(res, 404);

@@ -7,8 +7,10 @@
         [x]     /Register
         [x]     /Login
         [x]     /Logout
-        [ ]     /addDefinition
-        [ ]     /getWordDefinitions
+        [x]     /addDefinition
+        [x]     /showMyDefinitions
+        [x]     /deleteMyDefinition
+        [x]     /getWordDefinitions
         [ ]     /voteDefinition
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -21,8 +23,9 @@
         [x]     /Login
         [x]     /Logout
         [ ]     /addDefinition
+        [ ]     /showMyDefinitions
+        [ ]     /deleteMyDefinition
         [ ]     /getWordDefinitions
-        [ ]     /voteDefinition
         [ ]     /voteDefinition
         [ ]     Karma system:
 
