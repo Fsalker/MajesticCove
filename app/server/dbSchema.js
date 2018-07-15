@@ -12,7 +12,7 @@ var cfg = require("./config.js")
 
 module.exports = {
     createDatabase: function(dbo){
-        const DROP_COLLECTIONS = 1;
+        const DROP_COLLECTIONS = 0;
 
         var createCollections = function()
         {

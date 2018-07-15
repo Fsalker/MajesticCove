@@ -1,0 +1,404 @@
+[2018/06/13 - 21:28:07] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:28:07] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:28:11] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 21:28:14] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 21:28:14] Client ::ffff:86.127.245.63 has accessed /Loading.gif, requesting file = Loading.gif with extension gif
+[2018/06/13 - 21:29:28] Client ::1 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:29:28] Client ::1 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:29:29] Client ::1 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 21:29:30] Client ::1 has accessed /main.html, requesting file = main.html with extension html[2018/06/13 - 21:29:45] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:29:45] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:31:31] Client ::ffff:5.196.78.71 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:31:31] Client ::ffff:5.196.78.71 has accessed /apple-touch-icon.png, requesting file = apple-touch-icon.png with extension png
+[2018/06/13 - 21:31:43] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:31:43] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:32:34] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:32:34] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:32:34] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 21:33:01] Client ::ffff:71.114.67.62 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:33:07] Client ::ffff:71.114.67.62 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:33:07] Client ::ffff:71.114.67.62 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:33:07] Client ::ffff:71.114.67.62 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 21:33:08] Client ::ffff:71.114.67.62 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:33:08] Client ::ffff:71.114.67.62 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 21:33:08] Client ::ffff:71.114.67.62 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:33:08] Client ::ffff:71.114.67.62 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/13 - 21:33:08] Client ::ffff:71.114.67.62 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 21:33:09] Client ::ffff:71.114.67.62 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 21:34:10] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 21:34:13] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 21:34:13] Logged out 5b48ef3e26900d242843c99f
+[2018/06/13 - 21:35:19] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 21:35:19] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 21:35:20] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 21:35:21] Logged out 5b48ef3e26900d242843c99f
+[2018/06/13 - 21:36:06] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 21:36:08] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 21:36:08] Client ::ffff:86.127.245.63 has accessed /Loading.gif, requesting file = Loading.gif with extension gif
+[2018/06/13 - 21:36:09] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 21:36:09] Logged out 5b48f118ee37702500428218
+[2018/06/13 - 21:36:10] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 21:38:09] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 21:38:09] Logged out 5b48f118ee37702500428218
+[2018/06/13 - 21:46:51] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 21:46:53] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 21:55:33] Client ::ffff:130.255.44.199 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 22:07:49] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:07:50] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:08:00] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:08:07] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:08:14] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:08:15] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:08:20] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:08:20] Logged out 5b48f118ee37702500428218
+[2018/06/13 - 22:08:29] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:08:30] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:09:37] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:09:38] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:09:42] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:09:42] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:09:45] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:09:46] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:10:14] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:10:14] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:10:14] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:10:18] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:10:18] Client ::ffff:86.127.245.63 has accessed /Loading.gif, requesting file = Loading.gif with extension gif
+[2018/06/13 - 22:10:19] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:10:19] Logged out 5b48f91a4949a733b8728a7c
+[2018/06/13 - 22:10:20] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 22:10:23] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 22:10:24] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 22:10:25] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:10:25] Logged out 5b48f91a4949a733b8728a7c
+[2018/06/13 - 22:11:32] Client ::ffff:152.249.149.7 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 22:11:32] Client ::ffff:152.249.149.7 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 22:12:19] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:12:19] Logged out 5b48f91a4949a733b8728a7c
+[2018/06/13 - 22:12:25] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:12:25] Logged out 5b48f91a4949a733b8728a7c
+[2018/06/13 - 22:15:02] Client ::ffff:80.65.57.45 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 22:15:02] Client ::ffff:80.65.57.45 has accessed http://80.65.57.42:6667/, requesting file = undefined with extension undefined
+[2018/06/13 - 22:15:02] Client ::ffff:80.65.57.45 has accessed http://80.65.57.42:6667/, requesting file = undefined with extension undefined
+[2018/06/13 - 22:15:10] Client ::ffff:185.30.166.38 has accessed http://spamcheck.freenode.net/freenode-proxy-checker.txt, requesting file = freenode-proxy-checker.txt with extension txt
+[2018/06/13 - 22:15:10] Client ::ffff:185.30.166.38 has accessed http://spamcheck.freenode.net/freenode-proxy-checker.txt, requesting file = freenode-proxy-checker.txt with extension txt
+[2018/06/13 - 22:16:22] Client ::ffff:189.235.61.175 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 22:17:40] Client ::ffff:5.234.146.25 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 22:19:57] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:19:58] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/13 - 22:20:06] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:21:03] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:21:19] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:21:51] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:22:01] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:22:09] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:22:49] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:24:31] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:24:50] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:24:52] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:24:54] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:25:44] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:25:46] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:26:32] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:26:34] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:26:48] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:26:50] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:26:54] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:29:25] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:29:29] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:29:44] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:30:02] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:30:05] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:30:57] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:30:59] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:31:11] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:31:18] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:31:34] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:31:35] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:31:37] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:32:07] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:32:46] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:32:47] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:32:49] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:34:40] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:38:04] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:38:57] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:39:22] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:39:26] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:39:27] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:39:27] Logged out 5b48ffeed575ed13c8dd589e
+[2018/06/13 - 22:39:33] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:40:30] Client ::ffff:31.184.194.109 has accessed /, requesting file = undefined with extension undefined
+[2018/06/13 - 22:40:59] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:44:48] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:44:55] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:44:57] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:44:57] Logged out 5b4901387f644c02bcd1dc62
+[2018/06/13 - 22:44:58] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:46:50] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:47:06] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:47:06] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:47:06] Logged out 5b4901ba69bd5b1a44087e78
+[2018/06/13 - 22:47:07] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:47:07] Status code 409 does not exist!
+[2018/06/13 - 22:48:23] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:06] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:06] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:07] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:07] Logged out 5b49023299a5dc0870bc1401
+[2018/06/13 - 22:49:08] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:11] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:11] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:11] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:12] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:12] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:12] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:20] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:21] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:49:21] Logged out 5b49023299a5dc0870bc1401
+[2018/06/13 - 22:51:07] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:51:21] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:58:46] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:58:54] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:59:04] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/13 - 22:59:07] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:59:12] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:59:14] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/13 - 22:59:14] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/13 - 22:59:14] Logged out 5b49049299a5dc0870bc1402
+[2018/06/13 - 22:59:20] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 22:59:23] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 22:59:27] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/13 - 23:01:14] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:38] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/14 - 01:11:38] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/14 - 01:11:39] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:39] Logged out 5b49049299a5dc0870bc1402
+[2018/06/14 - 01:11:45] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:46] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:46] Logged out 5b4923a199a5dc0870bc1403
+[2018/06/14 - 01:11:48] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:48] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:48] Logged out 5b4923a199a5dc0870bc1403
+[2018/06/14 - 01:11:52] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:53] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:53] Logged out 5b4923a199a5dc0870bc1403
+[2018/06/14 - 01:11:55] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:11:58] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:12:45] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:12:45] Logged out 5b4923a199a5dc0870bc1403
+[2018/06/14 - 01:13:36] Client ::1 has accessed /toggleRestaurantFavorite?userId=241&sessionId=ef66bf461676202a4970859f36c85dca&restaurantId=5, requesting file = undefined with extension undefined
+[2018/06/14 - 01:13:38] Client ::1 has accessed /toggleRestaurantFavorite?userId=241&sessionId=ef66bf461676202a4970859f36c85dca&restaurantId=200, requesting file = undefined with extension undefined
+[2018/06/14 - 01:13:39] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:13:46] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:13:48] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:20:54] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/14 - 01:20:54] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:20:54] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/14 - 01:21:02] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:04] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:07] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:09] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:11] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:12] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:12] Logged out 5b4925d7d64fbb055c0452c5
+[2018/06/14 - 01:21:14] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:16] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:17] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:17] Logged out 5b4925d7d64fbb055c0452c5
+[2018/06/14 - 01:21:19] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:58] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/14 - 01:21:58] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 01:21:59] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/14 - 01:22:20] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 01:22:20] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 01:22:20] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"a\" }","op":{"username":"a","password":"a","ssid":"2bdcdd4ec89a4205306888497633ef1d9ff2b1e6eccf1c9c87e35003f639b9ee","votes":[],"karma":0,"_id":"5b49261c948bf111105795d6"}})
+[2018/06/14 - 01:44:43] Client ::ffff:187.74.186.247 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 01:44:43] Client ::ffff:187.74.186.247 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 02:32:27] Client ::ffff:172.104.108.109 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 03:35:00] Client ::ffff:89.136.145.97 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 04:04:32] Client ::ffff:180.254.18.77 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 04:13:32] Client ::ffff:167.59.3.51 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 05:29:20] Client ::ffff:31.184.194.109 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 06:36:57] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/14 - 06:36:57] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 06:37:05] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 06:37:40] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 06:38:07] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 06:38:07] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 06:38:48] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 06:38:52] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 06:38:52] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"q\" }","op":{"username":"q","password":"q","ssid":"2c300c7d2dfe0fccabc76ae3299ec835ece9fd2ded120af868bd3f1083617a66","votes":[],"karma":0,"_id":"5b49704c56ed593040f6213d"}})
+[2018/06/14 - 06:38:57] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 07:26:02] Client ::ffff:103.78.132.4 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 08:06:12] Client ::ffff:211.143.198.190 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 08:06:17] Client ::ffff:211.143.198.190 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 08:08:16] Client ::ffff:47.94.12.235 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 08:08:17] Client ::ffff:47.94.12.235 has accessed /webdav/, requesting file = undefined with extension undefined
+[2018/06/14 - 08:08:17] Client ::ffff:47.94.12.235 has accessed /wuwu11.php, requesting file = wuwu11.php with extension php
+[2018/06/14 - 08:08:18] Client ::ffff:47.94.12.235 has accessed /xw.php, requesting file = xw.php with extension php
+[2018/06/14 - 08:08:18] Client ::ffff:47.94.12.235 has accessed /xx.php, requesting file = xx.php with extension php
+[2018/06/14 - 08:08:19] Client ::ffff:47.94.12.235 has accessed /s.php, requesting file = s.php with extension php
+[2018/06/14 - 08:08:19] Client ::ffff:47.94.12.235 has accessed /w.php, requesting file = w.php with extension php
+[2018/06/14 - 08:08:20] Client ::ffff:47.94.12.235 has accessed /db.init.php, requesting file = db.init.php with extension php
+[2018/06/14 - 21:17:53] Client ::ffff:163.21.153.10 has accessed /webdav/, requesting file = undefined with extension undefined
+[2018/06/14 - 21:17:54] Client ::ffff:163.21.153.10 has accessed /wuwu11.php, requesting file = wuwu11.php with extension php
+[2018/06/14 - 21:17:55] Client ::ffff:163.21.153.10 has accessed /xw.php, requesting file = xw.php with extension php
+[2018/06/14 - 21:17:55] Client ::ffff:163.21.153.10 has accessed /xx.php, requesting file = xx.php with extension php
+[2018/06/14 - 21:17:56] Client ::ffff:163.21.153.10 has accessed /s.php, requesting file = s.php with extension php
+[2018/06/14 - 21:17:57] Client ::ffff:163.21.153.10 has accessed /w.php, requesting file = w.php with extension php
+[2018/06/14 - 21:17:57] Client ::ffff:163.21.153.10 has accessed /db.init.php, requesting file = db.init.php with extension php
+[2018/06/14 - 21:17:58] Client ::ffff:163.21.153.10 has accessed /db_session.init.php, requesting file = db_session.init.php with extension php
+[2018/06/14 - 21:17:58] Client ::ffff:163.21.153.10 has accessed /sheep.php, requesting file = sheep.php with extension php
+[2018/06/14 - 21:17:59] Client ::ffff:163.21.153.10 has accessed /index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:00] Client ::ffff:163.21.153.10 has accessed /phpmyadmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:00] Client ::ffff:163.21.153.10 has accessed /phpMyAdmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:00] Client ::ffff:163.21.153.10 has accessed /pmd/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:00] Client ::ffff:163.21.153.10 has accessed /pma/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:01] Client ::ffff:163.21.153.10 has accessed /PMA/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:01] Client ::ffff:163.21.153.10 has accessed /PMA2/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:01] Client ::ffff:163.21.153.10 has accessed /pmamy/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:02] Client ::ffff:163.21.153.10 has accessed /pmamy2/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:02] Client ::ffff:163.21.153.10 has accessed /mysql/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:02] Client ::ffff:163.21.153.10 has accessed /admin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:03] Client ::ffff:163.21.153.10 has accessed /db/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:03] Client ::ffff:163.21.153.10 has accessed /dbadmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:03] Client ::ffff:163.21.153.10 has accessed /web/phpMyAdmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:03] Client ::ffff:163.21.153.10 has accessed /admin/pma/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:04] Client ::ffff:163.21.153.10 has accessed /admin/PMA/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:04] Client ::ffff:163.21.153.10 has accessed /admin/mysql/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:04] Client ::ffff:163.21.153.10 has accessed /admin/mysql2/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:05] Client ::ffff:163.21.153.10 has accessed /admin/phpmyadmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:05] Client ::ffff:163.21.153.10 has accessed /admin/phpMyAdmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:05] Client ::ffff:163.21.153.10 has accessed /admin/phpmyadmin2/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:05] Client ::ffff:163.21.153.10 has accessed /mysqladmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:06] Client ::ffff:163.21.153.10 has accessed /mysql-admin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:06] Client ::ffff:163.21.153.10 has accessed /phpadmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:06] Client ::ffff:163.21.153.10 has accessed /phpmyadmin0/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:07] Client ::ffff:163.21.153.10 has accessed /phpmyadmin1/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:29] Client ::ffff:163.21.153.10 has accessed /phpMyAdminold/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:29] Client ::ffff:163.21.153.10 has accessed /phpMyAdmin.old/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:29] Client ::ffff:163.21.153.10 has accessed /pma-old/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:30] Client ::ffff:163.21.153.10 has accessed /claroline/phpMyAdmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:30] Client ::ffff:163.21.153.10 has accessed /typo3/phpmyadmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:30] Client ::ffff:163.21.153.10 has accessed /phpma/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:30] Client ::ffff:163.21.153.10 has accessed /phpmyadmin/phpmyadmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:18:31] Client ::ffff:163.21.153.10 has accessed /phpMyAdmin/phpMyAdmin/index.php, requesting file = index.php with extension php
+[2018/06/14 - 21:19:55] Client ::1 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 21:19:55] Client ::1 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/14 - 21:20:14] Client ::1 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 21:20:14] Client ::1 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/14 - 21:20:24] Client ::1 has accessed /, requesting file = undefined with extension undefined
+[2018/06/14 - 21:20:24] Client ::1 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/14 - 21:20:25] Client ::1 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/14 - 21:20:28] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/14 - 21:22:32] Client ::1 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:22:52] Client ::1 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:23:07] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 21:23:38] Client ::1 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 21:25:18] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:25:18] SyntaxError: Unexpected token d in JSON at position 115
+[2018/06/14 - 21:25:51] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:25:51] SyntaxError: Unexpected token d in JSON at position 115
+[2018/06/14 - 21:25:57] Client ::1 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 21:26:01] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:26:01] SyntaxError: Unexpected token d in JSON at position 115
+[2018/06/14 - 21:26:03] Client ::1 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 21:26:05] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:26:05] SyntaxError: Unexpected token d in JSON at position 115
+[2018/06/14 - 21:26:17] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:26:42] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:27:07] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:28:52] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:29:03] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:29:38] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:29:38] Failed to find associated user /voteDefinition
+[2018/06/14 - 21:30:42] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:33:38] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:34:13] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:34:26] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:34:26] TypeError: Cannot read property 'votes' of undefined
+[2018/06/14 - 21:34:42] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:34:44] TypeError: Cannot read property 'votes' of undefined
+[2018/06/14 - 21:35:16] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:42:52] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:43:33] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:51:28] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 21:57:07] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:02:01] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:02:13] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:02:46] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:02:48] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:04:16] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:04:25] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:07:31] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:07:37] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:10:30] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:14:12] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:14:50] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:16:11] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:19:50] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:20:15] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:20:30] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:20:51] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:21:12] Client ::ffff:127.0.0.1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:25:23] Client ::ffff:127.0.0.1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:25:42] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:26:20] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:27:05] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:27:09] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:27:48] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:28:30] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:28:44] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:37:25] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:38:01] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:38:04] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:38:06] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:38:09] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:38:10] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:38:46] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:42:14] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:42:25] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:44:18] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:44:34] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:44:51] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:44:53] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:44:55] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:44:55] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:44:59] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:45:00] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:45:50] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:46:18] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:46:42] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:46:46] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/14 - 22:46:50] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:47:07] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:47:17] Client ::1 has accessed /voteDefinition, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:05] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/14 - 22:56:12] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:13] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:13] Logged out 5b4a555cccf4aa18d01f9384
+[2018/06/14 - 22:56:14] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:14] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"1\" }","op":{"username":"1","password":"1","ssid":"49a385c5e01dd8fcf9507c1df536e6fbe6607ca37a33b924e7aa907b76e329cc","votes":[],"karma":0,"_id":"5b4a555eccf4aa18d01f9385"}})
+[2018/06/14 - 22:56:15] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:15] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"1\" }","op":{"username":"1","password":"1","ssid":"cf6dc523f3bf49ed79bd563ceeead44ffcba934a922b1548780abc09facce58d","votes":[],"karma":0,"_id":"5b4a555fccf4aa18d01f9386"}})
+[2018/06/14 - 22:56:15] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:15] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"1\" }","op":{"username":"1","password":"1","ssid":"3349356a64b123ef3f3850e1748d8cfbd448775060772b86ea6cde554ece2d57","votes":[],"karma":0,"_id":"5b4a555fccf4aa18d01f9387"}})
+[2018/06/14 - 22:56:15] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:15] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"1\" }","op":{"username":"1","password":"1","ssid":"ba2bd301e0800228bd41db840672e81e72a8e8a543745dea8589bc31e097abf8","votes":[],"karma":0,"_id":"5b4a555fccf4aa18d01f9388"}})
+[2018/06/14 - 22:56:16] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:16] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"1\" }","op":{"username":"1","password":"1","ssid":"b9f2804e764d2304f8278b3097c0862d0f5baa7442b4ca618c515766b5057454","votes":[],"karma":0,"_id":"5b4a5560ccf4aa18d01f9389"}})
+[2018/06/14 - 22:56:16] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:16] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"1\" }","op":{"username":"1","password":"1","ssid":"74454f281ff6eb950a367cb92155ea36e15c6ae3d7693b0cc4c8fa055d01983c","votes":[],"karma":0,"_id":"5b4a5560ccf4aa18d01f938a"}})
+[2018/06/14 - 22:56:16] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:16] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"1\" }","op":{"username":"1","password":"1","ssid":"e8b6fc8d0be2471c632c3bee2ae43bfa5ff7b73bd08dab1c46044f43ff5d5650","votes":[],"karma":0,"_id":"5b4a5560ccf4aa18d01f938b"}})
+[2018/06/14 - 22:56:17] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:18] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:18] Logged out 5b4a5561ccf4aa18d01f938c
+[2018/06/14 - 22:56:19] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:22] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 22:56:22] Logged out 5b4a5561ccf4aa18d01f938c
+[2018/06/14 - 22:56:23] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/14 - 22:58:13] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 22:58:18] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/14 - 22:58:22] Client ::1 has accessed /logout, requesting file = undefined with extension undefined

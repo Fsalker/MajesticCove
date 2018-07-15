@@ -44,15 +44,17 @@
 
             Help pls
         [ ] Add [{wordId: string, likes: boolean}] to 'votes' in User schema. But how???
-        [ ] Asynchronicity / "threading" issue
-            ie 1: (happy scenario) 
+        [x] Asynchronicity / "threading" issue
+            [x] ie 1: (happy scenario)
                 -user A registers with an username. the username is available. our request is pending...
                 -user B sends a /register with the same username. the username is available. we register this username (for user B)
-                -user A's request continues and we try registering. oh no! the username is already taken. but we've already checked that it was available!!! what do we do now?
+                -user A's request continues and we try registering. oh no! the username is already taken. but we've already checked that it was available!!! now we get an error, because username is unique. what do we do now?
 
                     what. do. we. do. now?
 
-            ie 2: (less happy scenario)
+                Solved by using only 1 request :)
+
+            [x] ie 2: (less happy scenario)
                 -user sends requests A: thumbs up for definition X. the definition hasn't already been thumbed up. our request is pending...
                 -user sends requests B: thumbs up for definition X. the definition hasn't already been thumbed up. our request is pending...
                 -request A proceeds to +1 definition X. Now we won't be able to give thumbs up for definition X
@@ -61,6 +63,11 @@
                     what. do. we. do. now?
 
                     ??????????????????????
+
+                Solved by refactoring "voteDefinition()"
+
+        [ ] If an error occurs during the server's runtime, the server dies.
+            Is this normal? Should we try/catch, if possible, so as to avoid halting the server?
 
 
                 

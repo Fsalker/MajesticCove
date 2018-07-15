@@ -12,7 +12,7 @@
     username*: string
     password*: string
     ssid*: string
-    votes: arr [{wordId: objectId, likes: boolean}]
+    votes: arr [{definitionid: objectId, likes: boolean}]
     karma: int 
         // Sum of all thumbs up & thumbs down of this user's definitions
 

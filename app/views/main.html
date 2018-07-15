@@ -1,11 +1,10 @@
 <head>
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
-    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
-    <!--<link rel="stylesheet" type="text/css" href="theme.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <!--<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>-->
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>-->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>-->
 </head>
 
 <body>
@@ -15,17 +14,17 @@
 
             <template v-if="!loggedin">
                 <div class="ml-auto">
-                    <button id="login" class="btn btn-outline-primary">Login</button>
-                    <button id="register" class="btn btn-primary">Register</button>
+                    <button id="loginBtn" class="btn btn-outline-primary">Login</button>
+                    <button id="registerBtn" class="btn btn-primary">Register</button>
 
-                    <b-popover target="login" triggers="focus" placement="auto" title="Login">
-                        <b-alert show v-bind:variant="login_response_variant" v-if="login_response">{{login_response}}</b-alert>
+                    <b-popover target="loginBtn" triggers="focus" placement="auto" title="Login">
+                        <b-alert show v-bind:variant="login.responseVariant" v-if="login.response">{{login.response}}</b-alert>
                         <div class="form-row">
                             <div class="col-sm-3 col-form-label">
                                 <label for="login_user">Username</label>
                             </div>
                             <div class="col-sm-9">
-                                <input id="login_user" class="form-control" v-model="login_user" @keydown.enter="login">
+                                <input id="login_user" class="form-control" v-model="login.user" @keydown.enter="login_f">
                             </div>
                         </div>
                         <div class="form-row">
@@ -33,23 +32,23 @@
                                 <label for="login_pass">Password</label>
                             </div>
                             <div class="col-sm-9">
-                                <input type="password" id="login_pass" class="form-control" v-model="login_pass" @keydown.enter="login">
+                                <input type="password" id="login_pass" class="form-control" v-model="login.pass" @keydown.enter="login_f">
                             </div>
                         <div>
                         <div class="mt-2">
-                            <button class="btn btn-success" v-on:click="login">Login</button>
-                            <img src="Loading.gif" v-if="showLoadingLogin">
+                            <button class="btn btn-success" v-on:click="login_f">Login</button>
+                            <img src="Loading.gif" v-if="login.showLoading">
                         </div>
                     </b-popover>
 
-                    <b-popover target="register" triggers="focus" placement="auto" title="Register">
-                        <b-alert show v-bind:variant="register_response_variant" v-if="register_response">{{register_response}}</b-alert>
+                    <b-popover target="registerBtn" triggers="focus" placement="auto" title="Register">
+                        <b-alert show v-bind:variant="register.responseVariant" v-if="register.response">{{register.response}}</b-alert>
                         <div class="form-row">
                             <div class="col-sm-3 col-form-label">
                                 <label for="register_user">Username</label>
                             </div>
                             <div class="col-sm-9">
-                                <input id="register_user" class="form-control" v-model="register_user" @keydown.enter="register">
+                                <input id="register_user" class="form-control" v-model="register.user" @keydown.enter="register_f">
                             </div>
                         </div>
                         <div class="form-row">
@@ -57,12 +56,12 @@
                                 <label for="register_pass">Password</label>
                             </div>
                             <div class="col-sm-9">
-                                <input type="password" id="register_pass" class="form-control" v-model="register_pass" @keydown.enter="register">
+                                <input type="password" id="register_pass" class="form-control" v-model="register.pass" @keydown.enter="register_f">
                             </div>
                         </div>
                         <div class="mt-2">
-                            <button class="btn btn-success" v-on:click="register">Register</button>
-                            <img src="Loading.gif" v-if="showLoadingRegister">
+                            <button class="btn btn-success" v-on:click="register_f">Register</button>
+                            <img src="Loading.gif" v-if="register.showLoading">
                         </div>
                     </b-popover>
                 </div>
@@ -80,19 +79,32 @@
             </template>
         </nav>
         <template v-if="showDebugData">
-            Login username = {{login_user}}<br>
-            Login password = {{login_pass}}<br>
-            Register username = {{register_user}}<br>
-            Register password = {{register_pass}}<br>
-            Register Response = {{register_response}}<br>
-            Login Response = {{login_response}}<br>
+            Login username = {{login.user}}<br>
+            Login password = {{login.pass}}<br>
+            Login Response = {{login.response}}<br>
+            Register username = {{register.user}}<br>
+            Register password = {{register.pass}}<br>
+            Register Response = {{register.response}}<br>
             Username = {{username}}<br>
             User ID = {{userid}}<br>
             Session ID = {{ssid}}<br>
         </template>
     </div>
     <script>
+        // Configure here
         const COOKIE_LIFETIME_DAYS = 1;
+        const BACKEND_ERROR_MESSAGE = "An error has occurred. Please try again."
+        const ERROR_USERNAME_EMPTY = "Username cannot be empty."
+        const ERROR_PASSWORD_EMPTY = "Password cannot be empty."
+        const ERROR_USERNAME_TAKEN = "Username is already taken."
+        const ERROR_AUTHENTIFICATION_FAILED = "Authentification failed. Check your credentials and try again."
+
+        // Functions
+        function setAlertObject(obj, msg, alertType){
+            console.log(obj)
+            obj.response = msg
+            obj.responseVariant = alertType
+        }
 
         function setCookie(cname, cvalue, exdays) {
             var d = new Date();
@@ -121,22 +133,33 @@
             setCookie(cname, null, 0);
         }
 
+        // Vue
         var app = new Vue({
             el: "#app",
             data: {
-                login_user: null,
-                login_pass: null,
-                register_user: null,
-                register_pass: null,
-                register_response: null,
-                register_response_variant: null,
-                login_response: null,
+                    // Cookies
                 username: getCookie("username"),
                 userid: getCookie("userid"),
                 ssid: getCookie("ssid"),
-                showDebugData: true,
-                showLoadingLogin: false,
-                showLoadingRegister: false
+
+                    // Login
+                login: {
+                    user: null,
+                    pass: null,
+                    response: null,
+                    responseVariant: null
+                },
+
+                    // Register
+                register: {
+                    user: null,
+                    pass: null,
+                    response: null,
+                    responseVariant: null
+                },
+
+                    // Other
+                showDebugData: false
             },
             computed: {
                 loggedin: function(){
@@ -144,80 +167,90 @@
                 }
             },
             methods: {
-                login(){
-                    this.showLoadingLogin = true;
+                login_f(){
+                    app.showLoadingLogin = true;
 
-                    data = {
-                        user: this.login_user,
-                        pass: this.login_pass
-                    }
+                    // Validate the data
+                    if(!app.login.user) setAlertObject(app.login, ERROR_USERNAME_EMPTY, "warning")
+                    else if(!app.login.pass) setAlertObject(app.login, ERROR_PASSWORD_EMPTY, "warning")
+                    else { // Everything's alright
+                        data = {
+                            user: app.login.user,
+                            pass: app.login.pass
+                        }
 
-                    var req = new XMLHttpRequest();
-                    req.onreadystatechange = function(){
-                        if(this.readyState == 4){
-                            app.showLoadingLogin = false;
-                            console.log(this.response);
-                            if(this.status == 200){
-                                res = JSON.parse(this.response)
-                                app.login_pass = null
+                        var req = new XMLHttpRequest();
+                        req.onreadystatechange = function () {
+                            if (this.readyState == 4) {
+                                app.showLoadingLogin = false;
+                                console.log(this.response);
+                                if (this.status == 200) {
+                                    res = JSON.parse(this.response)
+                                    app.login_pass = null
 
-                                app.ssid = res.ssid
-                                app.userid = res.userid
-                                app.username = data.user
-                                setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
-                                setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
-                                setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
+                                    app.ssid = res.ssid
+                                    app.userid = res.userid
+                                    app.username = data.user
+                                    app.login.user = null
+                                    app.login.pass = null
+                                    setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
+                                    setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
+                                    setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
 
-                                app.login_response = "Logged in successfully!"
-                                app.login_response_variant = "success";
-                            }
-                            else {
-                                app.login_response = this.responseText
-                                app.login_response_variant = "danger";
+                                    //setAlertObject(app.login, "Logged in succesfully!", "danger")
+                                }
+                                else if(this.status == 401) setAlertObject(app.login, ERROR_AUTHENTIFICATION_FAILED, "danger")
+                                else setAlertObject(app.login, BACKEND_ERROR_MESSAGE, "danger")
                             }
                         }
-                    }
 
-                    req.open("POST", "login")
-                    req.setRequestHeader("content-type", "application/json")
-                    req.send(JSON.stringify(data));
+                        req.open("POST", "login")
+                        req.setRequestHeader("content-type", "application/json")
+                        req.send(JSON.stringify(data));
+                    }
                 },
-                register(){
-                    this.showLoadingRegister = true;
+                register_f(){
+                    // Validate the data
+                    if(!app.register.user) setAlertObject(app.register, ERROR_USERNAME_EMPTY, "warning")
+                    else if(!app.register.pass) setAlertObject(app.register, ERROR_PASSWORD_EMPTY, "warning")
+                    else { // Everything's alright
+                        this.showLoadingRegister = true;
 
-                    data = {
-                        user: this.register_user,
-                        pass: this.register_pass
-                    }
+                        data = {
+                            user: this.register.user,
+                            pass: this.register.pass
+                        }
 
-                    var req = new XMLHttpRequest();
-                    req.onreadystatechange = function(){
-                        if(this.readyState == 4){
-                            app.showLoadingRegister = false
-                            console.log(this.response);
-                            if(this.status == 200){
-                                res = JSON.parse(this.response)
+                        var req = new XMLHttpRequest();
+                        req.onreadystatechange = function () {
+                            if (this.readyState == 4) {
+                                app.showLoadingRegister = false
+                                console.log(this.response);
+                                if (this.status == 200) {
+                                    res = JSON.parse(this.response)
 
-                                app.ssid = res.ssid
-                                app.userid = res.userid
-                                app.username = data.user
+                                    app.ssid = res.ssid
+                                    app.userid = res.userid
+                                    app.username = data.user
+                                    app.register.user = null
+                                    app.register.pass = null
 
-                                setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
-                                setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
-                                setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
+                                    setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
+                                    setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
+                                    setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
 
-                                app.register_response = "Registered successfully!"
-                                app.register_response_variant = "success"
-                            }
-                            else {
-                                app.register_response = this.responseText
-                                app.register_response_variant = "danger"
+                                    console.log(res)
+
+                                    //setAlertObject(app.register, "Registered succesfully!", "danger")
+                                }
+                                else if(this.status == 409) setAlertObject(app.register, ERROR_USERNAME_TAKEN, "danger")
+                                else setAlertObject(app.register, BACKEND_ERROR_MESSAGE, "danger")
                             }
                         }
+                        req.open("POST", "/register")
+                        req.setRequestHeader("content-type", "application/json")
+                        req.send(JSON.stringify(data))
                     }
-                    req.open("POST", "/register")
-                    req.setRequestHeader("content-type", "application/json")
-                    req.send(JSON.stringify(data))
                 },
                 logout(){
                     var req = new XMLHttpRequest();
@@ -230,8 +263,8 @@
                     deleteCookie("username")
                     deleteCookie("ssid")
 
-                    app.register_response = null
-                    app.login_response = null
+                    app.register.response = null
+                    app.login.response = null
                 }
             }
         });

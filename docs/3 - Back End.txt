@@ -116,6 +116,7 @@
         ssid: string
         definitionId: string
         likes: bool
+        ownerUserId: string
 
     Output:
         [!200] error message: string

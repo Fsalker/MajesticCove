@@ -19,9 +19,9 @@ module.exports = {
     },
 
     throwResponse: function(res, statusCode, data, dataExtension){
-        if(!cfg.HTML_RESPONSES[statusCode]){
+        if(data && !cfg.HTML_RESPONSES[statusCode]){
             cfg.log("Status code "+statusCode+" does not exist!")
-            throw500(res);
+            this.throw500(res);
         }
 
         res.writeHead(statusCode, {"content-type":"text/html"})
