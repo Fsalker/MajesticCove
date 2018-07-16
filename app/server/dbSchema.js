@@ -47,7 +47,9 @@ module.exports = {
                 }
             }, function(err, data){
                 if(err) cfg.log(err)
-                dbo.collection("users").createIndex({"username": 1}, {unique: true})
+                dbo.collection("users").ensureIndex({"username": 1}, {unique: true}, function(err, res){
+                    if(err) cfg.log(err)
+                })
             })
 
             dbo.createCollection("definitions", {
@@ -62,11 +64,14 @@ module.exports = {
                             definition: {
                                 bsonType: "string",
                             },
-                            userid: {
-                                bsonType: "objectId",
+                            username: {
+                                bsonType: "string",
                             },
                             rating: {
                                 bsonType: "int"
+                            },
+                            userid: {
+                                bsonType: "ObjectId"
                             }
                         }
                     }
@@ -77,7 +82,9 @@ module.exports = {
         }
         
         if(DROP_COLLECTIONS)
-            dbo.dropDatabase("users", createCollections)
+            dbo.dropDatabase("users", function(){
+                dbo.dropDatabase("definitions", createCollections())
+            })
         else
             createCollections();
     }

@@ -20,7 +20,7 @@ module.exports = {
     VIEWS_PATH: "./app/views/",
     HTML_RESPONSES: HTML_RESPONSES,
     databaseURL: "mongodb://localhost:27017/MajesticCoveDB",
-    log: function(msg){
+    log: function(msg){ // Prints the message to the console and logs it inside a file
         var logFile = fs.createWriteStream("log.txt", {flags: "a"})
         d = new Date()
         dateStr = "[" + d.getFullYear() + "/" + ("0" + d.getMonth()).slice(-2) + "/" +  ("0" + d.getDate()).slice(-2) + " - "+("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2) + "] "

@@ -39,7 +39,7 @@
     >Logs out an user and destroys the ssid
 
     Input:
-        user: string
+        userid: string
         ssid: string
 
     Output:
@@ -55,6 +55,7 @@
     Input:
         userid: string
         ssid: string
+        username: string
         word: string
         definition: string
 
@@ -124,7 +125,7 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-    definition = {_id: string, word: string, definition: string, rating: int, userid: string, userkarma: int}
+    definition = {_id: string, word: string, definition: string, rating: int, dislikes: int, username: string, userkarma: int}
 
 --------------------------------------------------------------------------------------------------------------------------------
 

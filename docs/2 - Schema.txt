@@ -9,24 +9,21 @@
             Users
 
     id*: objectId
-    username*: string
-    password*: string
-    ssid*: string
+    username*: string // lower case
+    password: string
+    ssid: string
     votes: arr [{definitionid: objectId, likes: boolean}]
-    karma: int 
-        // Sum of all thumbs up & thumbs down of this user's definitions
+    karma: int // Sum of all thumbs up & thumbs down of this user's definitions
 
 --------------------------------------------------------------------------------------------------------------------------------
 
             Definitions
 
     id*: objectId
-    word: string
+    word: string // lower case
     definition: string
-    rating: int 
-        // Sum of all thumbs up & dumbs down
-    userid: objectId 
-        // The author's user id
+    username: string  // The author's user id
+    rating: int // Sum of all thumbs up & dumbs down
 
 --------------------------------------------------------------------------------------------------------------------------------
 

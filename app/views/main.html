@@ -1,37 +1,48 @@
 <head>
-    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="theme.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>-->
+    <link type="text/css" rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"/>
+
     <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!--<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>-->
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
     <!--    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>-->
+    <style>
+        .dropIn-enter-active, .dropIn-leave-active {
+            transition: all 0.5s;
+        }
+        .dropIn-enter, .dropIn-leave-to /* .fade-leave-active below version 2.1.8 */ {
+            opacity: 0;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-dark navbar-expand-sm navbar-light bg-primary">
             <a class="navbar-brand" href="#">Majestic Cove</a>
 
             <template v-if="!loggedin">
                 <div class="ml-auto">
-                    <button id="loginBtn" class="btn btn-outline-primary">Login</button>
-                    <button id="registerBtn" class="btn btn-primary">Register</button>
+                    <button id="loginBtn" class="btn btn-secondary">Login</button>
+                    <button id="registerBtn" class="btn btn-secondary">Register</button>
 
                     <b-popover target="loginBtn" triggers="focus" placement="auto" title="Login">
-                        <b-alert show v-bind:variant="login.responseVariant" v-if="login.response">{{login.response}}</b-alert>
+                        <backend_alert :data="login">hihi</backend_alert>
                         <div class="form-row">
-                            <div class="col-sm-3 col-form-label">
+                            <div class="col-3 col-form-label">
                                 <label for="login_user">Username</label>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-9">
                                 <input id="login_user" class="form-control" v-model="login.user" @keydown.enter="login_f">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-sm-3 col-form-label">
+                            <div class="col-3 col-form-label">
                                 <label for="login_pass">Password</label>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-9">
                                 <input type="password" id="login_pass" class="form-control" v-model="login.pass" @keydown.enter="login_f">
                             </div>
                         <div>
@@ -42,20 +53,20 @@
                     </b-popover>
 
                     <b-popover target="registerBtn" triggers="focus" placement="auto" title="Register">
-                        <b-alert show v-bind:variant="register.responseVariant" v-if="register.response">{{register.response}}</b-alert>
+                        <backend_alert :data="register"></backend_alert>
                         <div class="form-row">
-                            <div class="col-sm-3 col-form-label">
+                            <div class="col-3 col-form-label">
                                 <label for="register_user">Username</label>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-9">
                                 <input id="register_user" class="form-control" v-model="register.user" @keydown.enter="register_f">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-sm-3 col-form-label">
+                            <div class="col-3 col-form-label">
                                 <label for="register_pass">Password</label>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-9">
                                 <input type="password" id="register_pass" class="form-control" v-model="register.pass" @keydown.enter="register_f">
                             </div>
                         </div>
@@ -75,6 +86,7 @@
                         <li>
                             <button class="btn btn-primary" v-on:click="logout">Log Out</button>
                         </li>
+                    </ul>
                 </div>
             </template>
         </nav>
@@ -89,15 +101,79 @@
             User ID = {{userid}}<br>
             Session ID = {{ssid}}<br>
         </template>
+
+        <div class="container-fluid">
+            <div class="row my-4">
+                <div class="col"></div>
+                <div class="col-8">
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item" v-for="(tab, index) in tabs" v-on:click="changeActiveTab(tab.title)" v-if="tab.visible">
+                            <a class="nav-link" v-bind:class="{active: activeTabTitle == tab.title}" href="#">{{tab.title}}</a>
+                        </li>
+                        <div class = "ml-auto">
+                            <button class = "btn btn-info" v-on:click="showHelp = !showHelp">Help!</button>
+                        </div>
+                    </ul>
+
+                    <transition name="dropIn">
+                        <template v-if="showHelp">
+                            <div class="alert alert-info my-4" style="overflow: hidden">
+                                <button class="close" v-on:click="showHelp = !showHelp">&times;</button>
+                                <p>Hey there!</p>
+                                <p>If this is your first time around Majestic Cove, here are a few useful tips you should check out:</p>
+                                <ul>
+                                    <li>Search for word meanings in the <strong>Search</strong> tab.</li>
+                                    <li>Add your own definitions in the <strong>Add definition</strong> tab.</li>
+                                    <li>Do you want to check your added definitions? See the <strong>My definitions</strong> tab.</li>
+                                </ul>
+                                That's all for now! Enjoy your stay.
+                            </div>
+                        </template>
+                    </transition>
+
+                    <div class="my-4">
+                        <template v-if="activeTabTitle=='Search'">
+                            <backend_alert :data="searchWord"></backend_alert>
+                            <div class="input-group">
+                                <input @keydown.enter="getWordDefinitions" type="text" class="form-control" v-model="searchWord.word" placeholder="Word">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" v-on:click="getWordDefinitions">Search!</button>
+                                </div>
+                            </div>
+                            <word_post v-for="definition in searchWord.wordList" v-bind:definition="definition"></word_post>
+                        </template>
+                        <template v-if="loggedin">
+                            <template v-if="activeTabTitle=='My definitions'">
+                                <backend_alert :data="myDefinitions"></backend_alert>
+                                <word_post v-for="definition in myDefinitions.wordList" v-bind:definition="definition"></word_post>
+                            </template>
+                            <template v-else-if="activeTabTitle=='Add definition'">
+                                <backend_alert :data="addDefinition"></backend_alert>
+                                <input @keydown.enter="submitDefinition" type="text" class="form-control mb-2" v-model="addDefinition.word" placeholder="Word">
+                                <input @keydown.enter="submitDefinition" type="text" class="form-control mb-2" v-model="addDefinition.definition" placeholder="Definition">
+                                <button @click="submitDefinition" class="btn btn-primary">Submit!</button>
+                            </template>
+                        </template>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
     </div>
     <script>
         // Configure here
         const COOKIE_LIFETIME_DAYS = 1;
-        const BACKEND_ERROR_MESSAGE = "An error has occurred. Please try again."
+
+        // API Front-End Messages
+        const ERROR_BACKEND_SOMETHING = "An error has occurred, please try again. If the error persists, log into your account again."
+        const ERROR_WORD_EMPTY = "Please insert a word."
+        const ERROR_DEFINITION_EMPTY = "Please insert a definition."
         const ERROR_USERNAME_EMPTY = "Username cannot be empty."
         const ERROR_PASSWORD_EMPTY = "Password cannot be empty."
         const ERROR_USERNAME_TAKEN = "Username is already taken."
         const ERROR_AUTHENTIFICATION_FAILED = "Authentification failed. Check your credentials and try again."
+        const SUCCESS_ADD_DEFINITION = "Your word definition has been succesfully added!"
 
         // Functions
         function setAlertObject(obj, msg, alertType){
@@ -133,14 +209,73 @@
             setCookie(cname, null, 0);
         }
 
-        // Vue
+        // Vue Components
+        Vue.component("word_post", {
+            props: ["definition"], // .definition, .word, .rating, userkarma, .username, .id
+            /*template:  `<div class="my-2 p-2" style="color: #66FCF1; background: #1F2833;border: 2px solid #0B0C10; border-radius: .25rem">*/
+            template:  `<div class="my-2 p-2" style="color: #66FCF1; background: #1F2833;border: 2px solid #0B0C10; border-radius: .25rem">
+                            <p><strong>{{definition.word}}</strong>: {{definition.definition}}</p>
+                            <p>{{definition.rating}} likes, submitted by <a href="#">{{definition.username}}</a></p>
+                        </div>`
+        })
+
+        Vue.component("backend_alert",{
+            props: ["data"], // data.response, data.responseVariant
+            template:  `<b-alert show v-bind:variant="data.responseVariant" v-if="data.response">
+                            {{data.response}}
+                        </b-alert>`
+        })
+
+        // Vue App
         var app = new Vue({
             el: "#app",
             data: {
+                    // App
+                tabs: [
+                    {
+                        title: "Search",
+                        visible: true
+                    },
+                    {
+                        title: "My definitions",
+                        visible: true
+                    },
+                    {
+                        title: "Add definition",
+                        visible: true
+                    }
+                ],
+                activeTabTitle: "Search",
+                showHelp: false,
+
                     // Cookies
                 username: getCookie("username"),
                 userid: getCookie("userid"),
                 ssid: getCookie("ssid"),
+
+                    // Search Word
+                searchWord: {
+                    word: null,
+                    response: null,
+                    responseVariant: null,
+                    wordList: null
+                },
+
+                    // My Definitions
+                myDefinitions: {
+                    response: null,
+                    responseVariant: null,
+                    wordList: null
+                },
+
+                    // Add Definition
+                addDefinition: {
+                    word: null,
+                    definition: null,
+                    response: null,
+                    responseVariant: null
+                },
+                numAddedDefinitions: 0,
 
                     // Login
                 login: {
@@ -163,10 +298,110 @@
             },
             computed: {
                 loggedin: function(){
-                    return this.ssid && this.userid;
+                    var result = this.ssid && this.userid
+                    for(tab of this.tabs)
+                        if(tab.title == "My definitions" || tab.title == "Add definition")
+                            tab.visible = result
+                    return result
                 }
             },
             methods: {
+                getWordDefinitions(){
+                    if(!app.searchWord.word) setAlertObject(app.searchWord, ERROR_WORD_EMPTY, "warning")
+                    else {
+                        data = {
+                            word: app.searchWord.word
+                        }
+
+                        console.log("word = "+data.word)
+
+                        var req = new XMLHttpRequest()
+
+                        req.open("POST", "getWordDefinitions")
+                        req.setRequestHeader("Content-Type", "application/json")
+                        req.send(JSON.stringify(data));
+
+                        req.onreadystatechange = function () {
+                            if (this.readyState == 4) {
+                                if (this.status == 200) {
+                                    res = JSON.parse(this.response)
+
+                                    app.searchWord.wordList = res["words"]
+                                    app.searchWord.response = null
+                                    console.log(app.searchWord.wordList)
+                                }
+                                else setAlertObject(app.searchWord, ERROR_BACKEND_SOMETHING, "danger")
+                            }
+                        }
+                    }
+                },
+
+                getMyDefinitions(){
+                    data = {
+                        userid: app.userid,
+                        ssid: app.ssid
+                    }
+
+                    console.log(data)
+
+                    var req = new XMLHttpRequest
+                    req.open("POST", "showMyDefinitions")
+                    req.setRequestHeader("conten-type", "application/json")
+                    req.send(JSON.stringify(data))
+
+                    req.onreadystatechange = function(){
+                        if(this.readyState == 4){
+                            if(this.status == 200){
+                                res = JSON.parse(this.response)
+
+                                app.myDefinitions.wordList = res["words"]
+                                app.myDefinitions.response = null
+                                console.log(res)
+                            }
+                            else setAlertObject(app.myDefinitions, ERROR_BACKEND_SOMETHING, "danger")
+                        }
+                    }
+                },
+
+                submitDefinition(){
+                    if(!app.addDefinition.word) setAlertObject(app.addDefinition, ERROR_WORD_EMPTY, "warning")
+                    else if(!app.addDefinition.definition) setAlertObject(app.addDefinition, ERROR_DEFINITION_EMPTY, "warning")
+                    else{
+                        data = {
+                            word: app.addDefinition.word,
+                            definition: app.addDefinition.definition,
+                            username: app.username,
+                            userid: app.userid,
+                            ssid: app.ssid
+                        }
+
+                        var req = new XMLHttpRequest
+                        req.open("POST", "addDefinition")
+                        req.setRequestHeader("content-type", "application/json")
+                        req.send(JSON.stringify(data))
+
+                        req.onreadystatechange = function(){
+                            if(this.readyState == 4){
+                                if(this.status == 200){
+                                    ++app.numAddedDefinitions
+                                    howMany = ""
+                                    if(app.numAddedDefinitions >= 2)
+                                        howMany = " ("+app.numAddedDefinitions+")"
+                                    setAlertObject(app.addDefinition, SUCCESS_ADD_DEFINITION + howMany, "success")
+                                }
+                                else setAlertObject(app.addDefinition, ERROR_BACKEND_SOMETHING, "danger")
+                            }
+                        }
+                    }
+                },
+
+                changeActiveTab(tabTitle){
+                    app.activeTabTitle = tabTitle
+                    if(tabTitle == "My definitions"){
+                        app.getMyDefinitions()
+                    }
+                },
+
                 login_f(){
                     app.showLoadingLogin = true;
 
@@ -180,6 +415,11 @@
                         }
 
                         var req = new XMLHttpRequest();
+
+                        req.open("POST", "login")
+                        req.setRequestHeader("content-type", "application/json")
+                        req.send(JSON.stringify(data));
+
                         req.onreadystatechange = function () {
                             if (this.readyState == 4) {
                                 app.showLoadingLogin = false;
@@ -196,17 +436,11 @@
                                     setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
                                     setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
                                     setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
-
-                                    //setAlertObject(app.login, "Logged in succesfully!", "danger")
                                 }
                                 else if(this.status == 401) setAlertObject(app.login, ERROR_AUTHENTIFICATION_FAILED, "danger")
-                                else setAlertObject(app.login, BACKEND_ERROR_MESSAGE, "danger")
+                                else setAlertObject(app.login, ERROR_BACKEND_SOMETHING, "danger")
                             }
                         }
-
-                        req.open("POST", "login")
-                        req.setRequestHeader("content-type", "application/json")
-                        req.send(JSON.stringify(data));
                     }
                 },
                 register_f(){
@@ -222,6 +456,11 @@
                         }
 
                         var req = new XMLHttpRequest();
+
+                        req.open("POST", "/register")
+                        req.setRequestHeader("content-type", "application/json")
+                        req.send(JSON.stringify(data))
+
                         req.onreadystatechange = function () {
                             if (this.readyState == 4) {
                                 app.showLoadingRegister = false
@@ -244,12 +483,9 @@
                                     //setAlertObject(app.register, "Registered succesfully!", "danger")
                                 }
                                 else if(this.status == 409) setAlertObject(app.register, ERROR_USERNAME_TAKEN, "danger")
-                                else setAlertObject(app.register, BACKEND_ERROR_MESSAGE, "danger")
+                                else setAlertObject(app.register, ERROR_BACKEND_SOMETHING, "danger")
                             }
                         }
-                        req.open("POST", "/register")
-                        req.setRequestHeader("content-type", "application/json")
-                        req.send(JSON.stringify(data))
                     }
                 },
                 logout(){
@@ -261,6 +497,7 @@
                     this.username = null
                     this.ssid = null
                     deleteCookie("username")
+                    deleteCookie("userid")
                     deleteCookie("ssid")
 
                     app.register.response = null

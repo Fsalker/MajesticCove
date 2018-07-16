@@ -19,7 +19,7 @@ function generateKey(){
     return hash.digest("hex");
 }
 
-function logAndThrow500(res, err){
+function logAndThrow500(err, res){
     cfg.log(err)
     throws.throwResponse(res, 500)
 }
@@ -75,19 +75,21 @@ function login_2_password(res, dbo, data){ // Authentificate with user & pass | 
 function login_3_ssid(res, dbo, data){ // Set the SSID and answer the request | data: user, pass
     ssid = generateKey()
 
-    findQuery = {username: data.user}
+    findQuery = {username: {$regex: new RegExp(data.user, "i")}}
     updateQuery = {$set: {ssid: ssid}}
 
-    dbo.collection("users").updateMany(findQuery, updateQuery, function(err, update_res){
+    dbo.collection("users").update(findQuery, updateQuery, function(err, update_res){
         if(err) logAndThrow500(err, res)
-        else
+        else {
             throws.throwResponse(res, 200, JSON.stringify({ssid: ssid, userid: data.userid}))
+        }
     })
 }
 
 function register(res, dbo, data){ // Register the new user | data: user, pass
     ssid = generateKey()
 
+    data.user = data.user.toLowerCase()
     dbo.collection("users").insert({username: data.user, password: data.pass, ssid: ssid, votes: [], karma: 0}, function(err, insert_res){
         if(err){
             cfg.log(err)
@@ -113,6 +115,7 @@ function logout(res, dbo, data){ // Reset the ssid | data: userid, sessionid
 }
 
 function authentificate_userid_ssid(res, dbo, data, query_callback){ // Validate userId & ssid | data: userid, sesionid, (...)
+    console.log(data)
     dbo.collection("users").find({_id: data.userid, ssid: data.ssid}).toArray(function(err, find_res){
         if(err)logAndThrow500(err, res)
         else {
@@ -127,7 +130,7 @@ function authentificate_userid_ssid(res, dbo, data, query_callback){ // Validate
 }
 
 function addDefinition(res, dbo, data){ // data: word, definition, userid
-    dbo.collection("definitions").insert({word: data.word, definition: data.definition, userid: data.userid, rating: 0}, function(err, ins_res){
+    dbo.collection("definitions").insert({word: data.word, definition: data.definition, userid: data.userid, username: data.username, rating: 0}, function(err, ins_res){
         if(err)logAndThrow500(err, res)
         else {
             throws.throwResponse(res, 200)
@@ -161,7 +164,7 @@ function getDefinitions(res, dbo, data){ // data: matchObject
             console.log("Aggregate data = ")
             console.log(agg_res)
 
-            throws.throwResponse(res, 200, JSON.stringify(agg_res))
+            throws.throwResponse(res, 200, JSON.stringify({words: agg_res}))
         }  
     })
 }
@@ -196,8 +199,10 @@ function voteDefinition(res, dbo, data) { // data: userid, likes, definitionid, 
             }
 
             if (ratingAdd) { // if we're voting accordingly, ie: adding new rating points
+                //dislikeAdd = 0
+                //if(!vote.likes && votes.likes != data.likes)
 
-                dbo.collection("definitions").update({_id: data.definitionid}, {$inc: {rating: ratingAdd}}, function (err, upd_res) {
+                dbo.collection("definitions").update({_id: data.definitionid}, {$inc: {rating: ratingAdd, dislikes: -ratingAdd}}, function (err, upd_res) {
                     if (err) {
                         log(err)
                         throws.throwResponse(res, 500)
@@ -256,7 +261,6 @@ module.exports = {
         handlePostRequest(req, res, dbo, function(res, dbo, data){
             if(!data.userid || typeof data.userid != "string" || data.userid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid userid.")
             else if(!data.ssid || typeof data.ssid != "string") throws.throwResponse(res, 400, "Invalid ssid.")
-            //else logout(dbo, )
             else authentificate_userid_ssid(res, dbo, {userid: ObjectID.createFromHexString(data.userid), ssid: data.ssid}, logout)
         })
     },
@@ -265,9 +269,10 @@ module.exports = {
         handlePostRequest(req, res, dbo, function(res, dbo, data){
             if(!data.userid || typeof data.userid != "string" || data.userid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid userid.")
             else if(!data.ssid || typeof data.ssid != "string") throws.throwResponse(res, 400, "Invalid ssid.")
+            else if(!data.username || typeof data.username != "string") throws.throwResponse(res, 400, "The word is missing.")
             else if(!data.word || typeof data.word != "string") throws.throwResponse(res, 400, "The word is missing.")
             else if(!data.definition || typeof data.definition != "string") throws.throwResponse(res, 400, "The definition is missing.")
-            else authentificate_userid_ssid(res, dbo, {userid: ObjectID.createFromHexString(data.userid), ssid: data.ssid, word: data.word, definition: data.definition}, addDefinition)
+            else authentificate_userid_ssid(res, dbo, {userid: ObjectID.createFromHexString(data.userid), ssid: data.ssid, username: data.username, word: data.word, definition: data.definition}, addDefinition)
         })
     },
 
@@ -290,7 +295,7 @@ module.exports = {
 
     getWordDefinitionsHandler: function(req, res, dbo){
         handlePostRequest(req, res, dbo, function(res, dbo, data){
-            if(!data.word || typeof data.word != "string") throws.throwResponse(400, "Invalid word.")
+            if(!data.word || typeof data.word != "string") throws.throwResponse(res, 400, "Invalid word.")
             else getDefinitions(res, dbo, {matchObject: {word: {$regex: new RegExp(data.word, "i")}}})
         })
     },

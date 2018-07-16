@@ -11,7 +11,8 @@
         [x]     /showMyDefinitions
         [x]     /deleteMyDefinition
         [x]     /getWordDefinitions
-        [ ]     /voteDefinition
+        [x]     /voteDefinition
+            -> [ ] Dislikes (35 out of 45 have liked)
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -22,10 +23,10 @@
         [x]     /Register
         [x]     /Login
         [x]     /Logout
-        [ ]     /addDefinition
-        [ ]     /showMyDefinitions
+        [x]     /addDefinition
+        [x]     /showMyDefinitions
         [ ]     /deleteMyDefinition
-        [ ]     /getWordDefinitions
+        [x]     /getWordDefinitions
         [ ]     /voteDefinition
         [ ]     Karma system:
 
@@ -38,8 +39,23 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
 
+                                To-Do List
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+        [x] Make "My definitions" work
+        [ ] Display a special message in case no results were found
+        [ ] cleanUp() after user changes `tab`
+        [ ] reset location to Search tab if user logs out while in an user-only tab
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+                            Suggestions (by myself)
+
         [x] Remove 'age' from front end & back end
-        [x] Modularise the code 
+        [x] Modularise the back-end code (for the 3rd time)
+        [ ] Modularise Vue.methods: AJAX requests can be simplified!
+        [ ] Simplify login_1, login_2, login_3 into a single function
 
 
             Help pls
