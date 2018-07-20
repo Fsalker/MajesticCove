@@ -13,15 +13,20 @@ var cfg = require("./config.js")
 var throws = require("./throwFuncs.js")
 var ObjectID = require("mongodb").ObjectID
 
-function generateKey(){
+function generateKey(){ // Generates a random sha256 key
     var hash = crypto.createHash("sha256"); 
     hash.update(Math.random().toString());
     return hash.digest("hex");
 }
 
-function logAndThrow500(err, res){
+function logAndThrow500(err, res){ // Logs an error & throws 500 to the front-end
     cfg.log(err)
     throws.throwResponse(res, 500)
+}
+
+function stringToRegexJson(str){ // Converts a "string" to an appropriate case-insensitive regex
+    regexStr = "^" + str + "$"
+    return {$regex: new RegExp(regexStr, "i")}
 }
 
 function handlePostRequest(req, res, dbo, request_callback){ // Handles POST requests sent to the server. Calls 'request_callback' on success.
@@ -48,7 +53,7 @@ function handlePostRequest(req, res, dbo, request_callback){ // Handles POST req
 
 // Login 1, 2, 3 - my personal early solution for avoiding callback hell :^)
 function login_1_username(res, dbo, data){ // Check that the username exists | data: user, pass
-    dbo.collection("users").find({username: {$regex: new RegExp(data.user, "i")}}).toArray(function(err, find_res){
+    dbo.collection("users").find({username: stringToRegexJson(data.user)}).toArray(function(err, find_res){
         if(err) logAndThrow500(err, res)
         else{
             if(find_res.length > 0) login_2_password(res, dbo, data)
@@ -59,12 +64,13 @@ function login_1_username(res, dbo, data){ // Check that the username exists | d
 }
 
 function login_2_password(res, dbo, data){ // Authentificate with user & pass | data: user, pass
-    dbo.collection("users").find({username: {$regex: new RegExp(data.user, "i")}, password: data.pass}).toArray(function(err, find_res){
+    dbo.collection("users").find({username: stringToRegexJson(data.user), password: data.pass}).toArray(function(err, find_res){
         if(err) logAndThrow500(err, res)
         else{
             if(find_res.length > 0) {
                 userid = find_res[0]._id
                 data.userid = userid
+                data.votes = find_res[0].votes
                 login_3_ssid(res, dbo, data)
             }
             else throws.throwResponse(res, 401, "Password is incorrect.")
@@ -75,13 +81,13 @@ function login_2_password(res, dbo, data){ // Authentificate with user & pass | 
 function login_3_ssid(res, dbo, data){ // Set the SSID and answer the request | data: user, pass
     ssid = generateKey()
 
-    findQuery = {username: {$regex: new RegExp(data.user, "i")}}
+    findQuery = {username: stringToRegexJson(data.user)}
     updateQuery = {$set: {ssid: ssid}}
 
     dbo.collection("users").update(findQuery, updateQuery, function(err, update_res){
         if(err) logAndThrow500(err, res)
         else {
-            throws.throwResponse(res, 200, JSON.stringify({ssid: ssid, userid: data.userid}))
+            throws.throwResponse(res, 200, JSON.stringify({ssid: ssid, userid: data.userid, votes: data.votes}))
         }
     })
 }
@@ -98,7 +104,7 @@ function register(res, dbo, data){ // Register the new user | data: user, pass
         }
         else{
             userid = insert_res.ops[0]._id
-            throws.throwResponse(res, 200, JSON.stringify({ssid: ssid, userid: userid}))
+            throws.throwResponse(res, 200, JSON.stringify({ssid: ssid, userid: userid, votes: []}))
         }
     })
 }
@@ -115,13 +121,9 @@ function logout(res, dbo, data){ // Reset the ssid | data: userid, sessionid
 }
 
 function authentificate_userid_ssid(res, dbo, data, query_callback){ // Validate userId & ssid | data: userid, sesionid, (...)
-    console.log(data)
     dbo.collection("users").find({_id: data.userid, ssid: data.ssid}).toArray(function(err, find_res){
         if(err)logAndThrow500(err, res)
         else {
-            console.log("_id = "+data.userid)
-            console.log("ssid = "+data.ssid)
-
             if(find_res.length > 0) query_callback(res, dbo, data)
             else throws.throwResponse(res, 401, "Authentification failed!")
         }
@@ -130,7 +132,7 @@ function authentificate_userid_ssid(res, dbo, data, query_callback){ // Validate
 }
 
 function addDefinition(res, dbo, data){ // data: word, definition, userid
-    dbo.collection("definitions").insert({word: data.word, definition: data.definition, userid: data.userid, username: data.username, rating: 0}, function(err, ins_res){
+    dbo.collection("definitions").insert({word: data.word, definition: data.definition, userid: data.userid, username: data.username, likes: 0, dislikes: 0}, function(err, ins_res){
         if(err)logAndThrow500(err, res)
         else {
             throws.throwResponse(res, 200)
@@ -140,29 +142,33 @@ function addDefinition(res, dbo, data){ // data: word, definition, userid
 
 function getDefinitions(res, dbo, data){ // data: matchObject
     //dbo.collection("definitions").find({userid: data.userid}).toArray(function(err, find_res){
+    definitionToUserLookup = {
+        from: "users",
+        localField: "userid",
+        foreignField: "_id",
+        as: "userdata"
+    }
+
+    if(!data.numResults) // numResults wasn't set, so we choose it by default
+        data.numResults = cfg.MAX_WORD_RESULTS
+
+    console.log("Getting some definitions, amount = "+data.numResults)
+
     dbo.collection("definitions").aggregate([
         {$match: data.matchObject},
-        {
-            $lookup: {
-                from: "users",
-                localField: "userid",
-                foreignField: "_id",
-                as: "userdata"
-            }
-        }
+        {$lookup: definitionToUserLookup},
+        {$sample: {size: data.numResults}}
     ]).toArray(function(err, agg_res){
         if(err)logAndThrow500(err, res)
         else {
             for(elem of agg_res){
                 elem.userdata = elem.userdata[0] // We only link 1 author (User)...
-                elem.userid = elem.userdata._id
+                elem.userid = elem.userdata._id // Take the author's userid
 
                 elem.userkarma = elem.userdata.karma
 
                 delete elem.userdata;
             }
-            console.log("Aggregate data = ")
-            console.log(agg_res)
 
             throws.throwResponse(res, 200, JSON.stringify({words: agg_res}))
         }  
@@ -183,43 +189,64 @@ function voteDefinition(res, dbo, data) { // data: userid, likes, definitionid, 
         if (err) logAndThrow500(err, res)
         else if(find_user_res.length == 0) logAndThrow500("Failed to find associated user /voteDefinition", res)
         else {
-            user = find_user_res[0]
-            votes = user.votes
-            vote = votes.filter(vote => vote.definitionid.toHexString() == data.definitionid)[0]
-            console.log("Definition's vote = "); console.log(vote)
-            ratingAdd = undefined
+            console.log("res = ")
+            console.log(find_user_res)
 
-            if (!vote) // our user is voting the definition for the first time
-                ratingAdd = data.likes ? 1 : -1
-            else {
-                if (data.likes != vote.likes) // our user has changed their mind, reversing the vote
-                    ratingAdd = data.likes ? 2 : -2
-                else
-                    throws.throwResponse(res, 400, "The definition has already been voted for, with the same value!")
+            vote = find_user_res[0].votes.filter(vote => vote.definitionid.toHexString() == data.definitionid)[0]
+            voteLikes = undefined
+            likeAdd = undefined
+            dislikeAdd = undefined
+
+            if(vote)
+                voteLikes = vote.likes
+
+            console.log("vote = "+vote)
+            if (voteLikes == undefined) { // User votes for the first time
+                likeAdd = data.likes
+                dislikeAdd = !data.likes
             }
+            else { // User reverses their previous vote
+                if(data.likes == voteLikes)
+                    throws.throwResponse(res, 409, "The definition has already been voted for, with the same value!")
+                else {
+                    if(voteLikes){ // Dislike becomes Like
+                        likeAdd = 1
+                        dislikeAdd = -1
+                    }
+                    else { // Like becomes Dislike
+                        likeAdd = -1
+                        dislikeAdd = 1
+                    }
+                }
+            }
+            console.log(likeAdd)
+            console.log(dislikeAdd)
 
-            if (ratingAdd) { // if we're voting accordingly, ie: adding new rating points
-                //dislikeAdd = 0
-                //if(!vote.likes && votes.likes != data.likes)
+            if (likeAdd || dislikeAdd) { // If we're voting properly
 
-                dbo.collection("definitions").update({_id: data.definitionid}, {$inc: {rating: ratingAdd, dislikes: -ratingAdd}}, function (err, upd_res) {
+                dbo.collection("definitions").update({_id: data.definitionid}, {$inc: {likes: likeAdd, dislikes: dislikeAdd}}, function (err, upd_res) {
                     if (err) {
                         log(err)
                         throws.throwResponse(res, 500)
                     }
                     else {
-                        console.log(upd_res.result)
                         var bulk = dbo.collection("users").initializeOrderedBulkOp();
                         bulk.find({_id: data.userid}).updateOne({$pull: {votes: {definitionid: data.definitionid}}})
-                        bulk.find({_id: data.userid}).updateOne({$push: {votes: {definitionid: data.definitionid, likes: ratingAdd > 0}}})
-                        bulk.find({_id: data.ownerUserid}).updateOne({$inc: {karma: ratingAdd}})
+                        bulk.find({_id: data.userid}).updateOne({$push: {votes: {definitionid: data.definitionid, likes: likeAdd}}})
+                        bulk.find({_id: data.ownerUserid}).updateOne({$inc: {karma: likeAdd ? 1 : -1}})
                         bulk.execute()
+                        console.log("OK!!!")
                         throws.throwResponse(res, 200)
                     }
                 })
             }
         }
     })
+}
+
+function getRandomWords(res, dbo){
+    console.log("Getting random words")
+    getDefinitions(res, dbo, {matchObject: {}, numResults: cfg.MAX_RANDOM_WORD_RESULTS})
 }
 
 function updateUserKarma(dbo, userid, amount){
@@ -286,6 +313,8 @@ module.exports = {
 
     deleteMyDefinitionHandler: function(req, res, dbo){
         handlePostRequest(req, res, dbo, function(res, dbo, data){
+            console.log("Data = ")
+            console.log(data)
             if(!data.userid || typeof data.userid != "string" || data.userid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid userid.")
             else if(!data.ssid || typeof data.ssid != "string") throws.throwResponse(res, 400, "Invalid ssid.")
             else if(!data.definitionid || typeof data.definitionid != "string" || data.definitionid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid definitionid.")
@@ -296,17 +325,19 @@ module.exports = {
     getWordDefinitionsHandler: function(req, res, dbo){
         handlePostRequest(req, res, dbo, function(res, dbo, data){
             if(!data.word || typeof data.word != "string") throws.throwResponse(res, 400, "Invalid word.")
-            else getDefinitions(res, dbo, {matchObject: {word: {$regex: new RegExp(data.word, "i")}}})
+            else getDefinitions(res, dbo, {matchObject: {word: stringToRegexJson(data.word)}})
         })
     },
 
     voteDefinitionHandler: function(req, res, dbo){
         handlePostRequest(req, res, dbo, function(res, dbo, data){
+            console.log("data = ")
+            console.log(data)
             if (!data.userid || typeof data.userid != "string" || data.userid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid userid.")
-            else if (!data.ownerUserid || typeof data.ownerUserid != "string" || data.ownerUserid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid ownerUserid.")
             else if (!data.ssid || typeof data.ssid != "string") throws.throwResponse(res, 400, "Invalid ssid.")
             else if (!data.definitionid || typeof data.definitionid != "string" || data.definitionid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid definitionid.")
             else if (typeof data.likes != "boolean") throws.throwResponse(res, 400, "Invalid like/dislike .")
+            else if (!data.ownerUserid || typeof data.ownerUserid != "string" || data.ownerUserid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid ownerUserid.")
             else authentificate_userid_ssid(res, dbo, {
                     userid: ObjectID.createFromHexString(data.userid),
                     definitionid: ObjectID.createFromHexString(data.definitionid),
@@ -316,6 +347,10 @@ module.exports = {
                 }, voteDefinition)
         })
     },
+
+    getRandomWordsHandler: function(req, res, dbo){
+        getRandomWords(res, dbo)
+    }
 
 
 }

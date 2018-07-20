@@ -1378,3 +1378,1459 @@
 [2018/06/16 - 11:55:50] Client ::1 has accessed /register, requesting file = undefined with extension undefined
 [2018/06/16 - 11:56:30] Client ::1 has accessed /addDefinition, requesting file = undefined with extension undefined
 [2018/06/16 - 11:56:32] Client ::1 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/16 - 23:26:17] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/16 - 23:26:17] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/16 - 23:26:20] Client ::ffff:52.114.75.71 has accessed /, requesting file = undefined with extension undefined
+[2018/06/16 - 23:26:20] Client ::ffff:52.114.75.71 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/16 - 23:26:43] Client ::ffff:89.137.193.191 has accessed /, requesting file = undefined with extension undefined
+[2018/06/16 - 23:26:43] Client ::ffff:89.137.193.191 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/16 - 23:26:43] Client ::ffff:89.137.193.191 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/16 - 23:26:46] Client ::ffff:89.137.193.191 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/16 - 23:27:01] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/16 - 23:27:01] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/16 - 23:27:11] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/16 - 23:27:30] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/16 - 23:45:44] Client ::ffff:162.246.211.6 has accessed /, requesting file = undefined with extension undefined
+[2018/06/16 - 23:46:48] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/16 - 23:46:48] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/16 - 23:47:15] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/16 - 23:47:23] Client ::ffff:52.114.77.26 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/16 - 23:47:24] Client ::ffff:52.114.77.26 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/16 - 23:47:30] Client ::ffff:89.137.193.191 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/16 - 23:47:54] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/16 - 23:47:54] Logged out 5b4cffb22658e51f54c184f3
+[2018/06/16 - 23:50:04] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/16 - 23:50:05] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/16 - 23:50:17] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/16 - 23:55:46] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/16 - 23:55:46] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/17 - 01:28:08] Client ::ffff:31.184.194.109 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 02:04:36] Client ::ffff:109.104.199.60 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 02:25:42] Client ::ffff:138.204.133.147 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 02:36:38] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 02:36:38] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/17 - 02:36:40] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 03:18:35] Client ::ffff:138.99.34.124 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 03:25:53] Client ::ffff:47.91.156.224 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 03:25:55] Client ::ffff:47.91.156.224 has accessed /webdav/, requesting file = undefined with extension undefined
+[2018/06/17 - 03:25:57] Client ::ffff:47.91.156.224 has accessed /wuwu11.php, requesting file = wuwu11.php with extension php
+[2018/06/17 - 03:26:00] Client ::ffff:47.91.156.224 has accessed /xw.php, requesting file = xw.php with extension php
+[2018/06/17 - 03:26:02] Client ::ffff:47.91.156.224 has accessed /xw1.php, requesting file = xw1.php with extension php
+[2018/06/17 - 03:26:04] Client ::ffff:47.91.156.224 has accessed /9678.php, requesting file = 9678.php with extension php
+[2018/06/17 - 03:26:07] Client ::ffff:47.91.156.224 has accessed /wc.php, requesting file = wc.php with extension php
+[2018/06/17 - 03:26:09] Client ::ffff:47.91.156.224 has accessed /xx.php, requesting file = xx.php with extension php
+[2018/06/17 - 03:26:11] Client ::ffff:47.91.156.224 has accessed /s.php, requesting file = s.php with extension php
+[2018/06/17 - 03:26:13] Client ::ffff:47.91.156.224 has accessed /w.php, requesting file = w.php with extension php
+[2018/06/17 - 03:26:15] Client ::ffff:47.91.156.224 has accessed /sheep.php, requesting file = sheep.php with extension php
+[2018/06/17 - 03:26:17] Client ::ffff:47.91.156.224 has accessed /db.init.php, requesting file = db.init.php with extension php
+[2018/06/17 - 03:26:19] Client ::ffff:47.91.156.224 has accessed /db_session.init.php, requesting file = db_session.init.php with extension php
+[2018/06/17 - 03:26:22] Client ::ffff:47.91.156.224 has accessed /db__.init.php, requesting file = db__.init.php with extension php
+[2018/06/17 - 03:26:24] Client ::ffff:47.91.156.224 has accessed /mx.php, requesting file = mx.php with extension php
+[2018/06/17 - 03:26:26] Client ::ffff:47.91.156.224 has accessed /wshell.php, requesting file = wshell.php with extension php
+[2018/06/17 - 03:26:28] Client ::ffff:47.91.156.224 has accessed /xshell.php, requesting file = xshell.php with extension php
+[2018/06/17 - 03:26:30] Client ::ffff:47.91.156.224 has accessed /qq.php, requesting file = qq.php with extension php
+[2018/06/17 - 03:26:32] Client ::ffff:47.91.156.224 has accessed /conflg.php, requesting file = conflg.php with extension php
+[2018/06/17 - 03:26:34] Client ::ffff:47.91.156.224 has accessed /lindex.php, requesting file = lindex.php with extension php
+[2018/06/17 - 03:26:37] Client ::ffff:47.91.156.224 has accessed /phpstudy.php, requesting file = phpstudy.php with extension php
+[2018/06/17 - 03:26:40] Client ::ffff:47.91.156.224 has accessed /weixiao.php, requesting file = weixiao.php with extension php
+[2018/06/17 - 03:26:43] Client ::ffff:47.91.156.224 has accessed /feixiang.php, requesting file = feixiang.php with extension php
+[2018/06/17 - 06:34:48] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 06:34:48] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/17 - 06:35:27] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:35:28] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:35:32] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:35:34] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:36:36] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:36:37] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:36:47] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:36:47] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:36:54] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:36:54] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:37:01] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:37:01] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:37:18] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:37:18] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:37:24] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/17 - 06:37:24] Logged out 5b4c5795f68f462cbceb3756
+[2018/06/17 - 06:38:00] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:38:01] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:38:20] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:38:21] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:38:22] Client ::ffff:217.169.217.74 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 06:38:32] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:38:32] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:38:34] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:38:35] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:38:45] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:38:45] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:38:48] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:38:48] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:38:52] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:38:53] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:39:04] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:39:05] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:39:43] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:39:44] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:39:48] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:39:49] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:39:55] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:39:56] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:40:02] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:40:02] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:40:24] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:40:25] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:40:59] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:41:48] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:41:57] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:42:13] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:42:15] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:42:15] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:49:45] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:49:45] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:49:48] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:49:52] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:49:56] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:51:11] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/17 - 06:51:13] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/17 - 06:51:18] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:51:19] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:51:21] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:51:22] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:12] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:52:13] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:52:13] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:14] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:14] Logged out 5b4c5795f68f462cbceb3756
+[2018/06/17 - 06:52:16] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:17] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:19] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:29] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:32] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:52:32] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:52:43] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:53:00] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:53:47] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:53:47] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:53:48] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:53:54] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:53:56] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:53:56] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:53:57] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:54:06] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:54:07] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 06:54:07] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:54:09] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:54:11] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:54:16] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:55:08] Client ::ffff:86.127.245.63 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/17 - 06:55:09] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:55:13] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:55:14] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:55:48] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 06:55:49] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:55:55] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:23] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:25] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:26] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:28] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:33] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:35] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:37] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:38] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:53] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 06:56:54] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:01:16] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 07:02:50] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 07:05:35] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 07:06:02] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:06:04] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:06:19] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 07:06:20] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 07:06:21] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:06:23] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:06:29] Client ::ffff:86.127.245.63 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/17 - 07:06:33] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/17 - 07:06:46] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:27] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 07:07:27] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 07:07:30] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:31] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:32] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:43] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:44] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:48] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:49] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:07:56] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:08:22] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:08:28] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:13:54] Client ::ffff:177.188.227.60 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 07:24:38] Client ::ffff:187.176.189.56 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 07:29:07] Client ::ffff:86.127.245.63 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 07:29:07] Client ::ffff:86.127.245.63 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/17 - 07:29:10] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 07:29:14] Client ::ffff:31.13.113.197 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 07:29:16] Client ::ffff:31.13.126.91 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 07:29:17] Client ::ffff:31.13.112.153 has accessed /Loading.gif, requesting file = Loading.gif with extension gif
+[2018/06/17 - 07:29:36] Client ::ffff:82.137.11.177 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 07:29:39] Client ::ffff:82.137.11.177 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 07:30:37] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:30:43] Client ::ffff:86.127.245.63 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/17 - 07:31:00] Client ::ffff:86.127.245.63 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/17 - 07:31:01] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:31:03] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:31:54] Client ::ffff:86.127.245.63 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/17 - 07:32:06] Client ::ffff:86.127.245.63 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:32:29] Client ::ffff:86.127.245.63 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/17 - 07:32:40] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/17 - 07:32:40] Logged out 5b4d6b56c2288210d0a280e6
+[2018/06/17 - 07:32:48] Client ::ffff:86.127.245.63 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/17 - 07:32:49] Client ::ffff:86.127.245.63 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 07:33:40] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/17 - 07:33:41] Client ::ffff:66.249.93.198 has accessed /, requesting file = undefined with extension undefined
+[2018/06/17 - 07:33:41] Client ::ffff:66.249.93.200 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/17 - 07:33:46] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/17 - 07:33:46] Logged out 5b4d71a4c2288210d0a280ea
+[2018/06/17 - 07:33:51] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/17 - 07:33:55] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/17 - 07:33:56] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/17 - 07:33:56] Logged out 5b4d71b3c2288210d0a280eb
+[2018/06/17 - 07:33:57] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/17 - 07:34:02] Client ::ffff:86.127.245.63 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/17 - 07:34:02] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"wiggitywiggitywack\" }","op":{"username":"wiggitywiggitywack","password":"12","ssid":"edd544a0d3c38386434b87db6bb0f561bff03f6d85546b89e7d3fe033a171a77","votes":[],"karma":0,"_id":"5b4d71bac2288210d0a280ec"}})
+[2018/06/17 - 07:34:04] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/17 - 07:34:06] Client ::ffff:86.127.245.63 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/17 - 07:34:41] Client ::ffff:86.127.245.63 has accessed /addDefinition, requesting file = undefined with extension undefined
+[2018/06/17 - 07:35:56] Client ::ffff:86.127.245.63 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/17 - 10:03:11] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 11:45:00] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 11:48:36] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 11:49:35] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 11:49:56] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 11:51:34] MongoError: Unknown type name alias: ObjectId
+[2018/06/17 - 12:08:30] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 05:40:26] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 05:49:00] Client ::1 has accessed /, requesting file = undefined with extension undefined
+[2018/06/19 - 05:49:00] Client ::1 has accessed /theme.css, requesting file = theme.css with extension css
+[2018/06/19 - 05:49:00] Client ::1 has accessed /favicon.ico, requesting file = favicon.ico with extension ico
+[2018/06/19 - 05:49:02] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 05:49:11] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:08:40] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:08:42] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:09:08] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:09:30] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:10:29] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:11:35] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:12:41] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:12:56] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:13:11] MongoError: Unknown type name alias: ObjectId
+[2018/06/19 - 06:13:34] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:13:39] Client ::1 has accessed /register, requesting file = undefined with extension undefined
+[2018/06/19 - 06:14:07] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:14:08] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/19 - 06:14:11] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/19 - 06:14:14] Client ::1 has accessed /getWordDefinitions, requesting file = undefined with extension undefined
+[2018/06/19 - 06:14:15] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/19 - 06:14:16] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:14:16] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:15:36] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:15:41] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:15:55] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:16:01] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:16:03] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:16:03] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:16:04] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:16:06] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:16:06] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/19 - 06:16:08] Client ::1 has accessed /showMyDefinitions, requesting file = undefined with extension undefined
+[2018/06/19 - 06:18:03] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:10] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:10] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:20:20] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:21] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:21] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:20:34] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:20:36] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:37] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:37] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:20:39] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:41] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:41] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:20:41] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:21:37] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:21:40] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:28:19] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:28:20] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:28:20] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:28:24] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:28:25] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:28:26] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:28:34] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:28:35] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:29:19] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:29:22] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:29:23] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:29:23] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:29:26] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:29:27] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:29:28] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:29:28] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:31:23] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:31:28] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:31:44] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:32:15] Client ::1 has accessed /main.html, requesting file = main.html with extension html
+[2018/06/19 - 06:32:18] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:32:30] Client ::1 has accessed /logout, requesting file = undefined with extension undefined
+[2018/06/19 - 06:32:30] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:32:33] Client ::1 has accessed /login, requesting file = undefined with extension undefined
+[2018/06/19 - 06:35:37] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:35:44] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:35:45] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:35:45] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:36:18] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:36:21] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:36:22] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:37:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:37:30] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:37:30] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:37:31] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:37:32] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:37:33] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:37:33] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:38:47] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:38:47] WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : \"123\" }","op":{"username":"123","password":"gf","ssid":"3124c9274f4d99c5db91422aee5286e71dfa25ce4fcf28f2d9362a1c9a9a6ebf","votes":[],"karma":0,"_id":"5b5007c73aa86f1adc04057b"}})
+[2018/06/19 - 06:38:50] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:38:55] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:38:56] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:38:56] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:39:01] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:02] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:03] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:03] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:39:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:29] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 06:39:33] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:33] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:36] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:39] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:40] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:40] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:39:42] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:50] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:52] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:39:52] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:52] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:52] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:53] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:53] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:54] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:54] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:55] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:39:55] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:43:52] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:43:55] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:43:56] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:03] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:45:04] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 06:45:04] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:09] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:11] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:12] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:14] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:17] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:44] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:45] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:47] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:49] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:50] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:50] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:45:53] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:55] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:45:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:46:01] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:46:02] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:46:03] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:46:03] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:46:05] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:46:06] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:47:50] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:03] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:27] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:27] Logged out 5b50097d3aa86f1adc04057e
+[2018/06/19 - 06:48:33] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:48] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:48] Logged out 5b50097d3aa86f1adc04057e
+[2018/06/19 - 06:48:50] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:52] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:52] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:48:54] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:48:57] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:48:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:49:01] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:49:02] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:49:47] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:49:47] Logged out 5b50097d3aa86f1adc04057e
+[2018/06/19 - 06:49:49] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:49:50] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:50:06] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:50:07] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:50:08] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:50:08] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:50:50] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:50:53] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:50:54] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:50:55] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:50:57] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 06:50:57] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 06:51:14] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:58:08] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:58:12] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:58:46] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 06:59:04] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:03:05] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:05] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:06] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:06] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:03:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:03:18] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:20] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:21] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:21] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:03:38] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:03:42] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:42] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:43] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:03:43] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:04:25] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:04:32] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:04:35] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:04:38] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:04:52] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:04:52] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:06:21] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:06:24] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:06:29] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:06:30] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:06:30] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:06:34] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:06:36] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:06:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:06:41] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:06:57] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:06:59] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:07:02] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:07:02] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:07:05] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:07:41] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:07:41] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:07:41] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:07:43] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:07:47] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:07:48] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:07:48] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:07:50] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:08:01] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:08:04] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:08:04] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:09:30] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:09:32] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:09:39] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:09:39] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:09:39] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:09:41] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:09:45] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:09:53] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:09:55] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:09:55] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:10:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:10:18] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:10:44] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:10:48] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:10:48] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:10:52] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:10:55] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:10:55] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:10:57] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:11:06] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:11:06] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:11:08] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:11:32] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:11:33] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:11:33] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:11:37] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:39] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:12:40] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:40] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:12:42] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:43] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:45] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:47] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:47] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:12:48] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:49] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:51] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:51] Logged out 5b500fc03aa86f1adc040580
+[2018/06/19 - 07:12:53] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:54] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:54] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:12:56] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:56] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:57] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:12:57] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:12:59] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:13:05] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:13:06] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:13:08] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:13:08] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:14:40] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:40] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:47] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:51] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:54] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:14:57] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:06] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:16] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:16] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:15:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:23] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:24] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:24] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:27] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:30] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:30] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:31] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:31] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:31] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:32] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:15:33] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:35] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:35] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:15:38] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:38] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:40] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:40] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:15:42] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:45] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:56] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:57] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:15:57] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:16:46] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:16:49] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:16:57] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:16:57] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:17:07] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:17:09] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:17:09] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:17:52] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:18:00] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:19:09] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:19:36] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:19:39] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:19:39] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:20:36] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:20:37] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:20:38] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:20:40] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:20:40] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:20:51] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:20:52] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:20:54] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:20:54] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:21:39] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:22:40] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:22:54] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:07] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:31:10] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:13] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:13] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:31:15] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:16] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:16] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:16] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:31:18] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:19] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:22] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:26] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:28] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:33] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:33] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:33] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:34] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:35] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:35] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:31:36] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:38] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:31:39] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:32:02] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:32:02] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:32:04] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:32:06] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:32:07] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:32:44] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:32:56] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:32:56] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:33:10] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:33:14] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:33:16] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:33:16] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:33:38] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:33:51] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:33:55] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:33:55] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:33:59] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:34:01] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:35:19] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:35:19] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:35:26] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:35:29] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:35:30] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:35:30] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:35:32] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:35:32] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:35:33] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:35:33] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:37:30] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:37:33] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:03] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:38:06] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:06] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:08] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:08] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:38:26] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:38:28] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:29] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:29] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:38:31] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:32] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:32] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:38:55] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:38:58] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:59] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:38:59] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:39:19] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:39:20] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:39:23] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:39:23] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:39:24] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:39:24] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:40:19] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:40:22] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:40:27] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:40:27] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:40:30] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:40:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:07] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:07] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:41:22] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:41:24] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:24] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:25] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:25] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:41:55] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:41:57] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:59] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:41:59] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:42:12] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:42:14] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:42:14] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:42:15] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:42:15] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:42:39] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:42:42] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:42:42] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:42:43] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:42:43] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:42:56] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:42:59] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:42:59] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:00] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:00] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:43:01] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:06] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:08] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:10] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:10] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:10] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:43:21] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:43:23] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:23] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:24] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:24] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:43:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:43:39] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:41] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:41] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:43:48] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:48] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:43:48] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:43:57] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:43:59] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:00] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:00] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:00] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:44:13] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:44:16] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:16] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:17] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:17] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:44:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:44:30] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:35] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:44:35] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:35] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:44:37] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:50] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:44:50] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:46:35] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:48:05] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:48:08] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:48:08] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:48:09] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:48:10] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:48:10] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 07:48:12] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:50:10] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 07:58:15] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:58:16] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 07:58:20] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:58:21] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 07:59:00] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:59:01] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 07:59:13] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:59:13] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 07:59:33] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:59:33] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 07:59:39] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 07:59:39] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 09:28:22] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 09:28:23] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 09:28:27] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 09:36:49] Client ::1 has accessed /restaurantsInput_v2?userId=67&sessionId=be8b6140bc76dd5d6a96c48f98038254&input=sunt%20smecher&location=Berceni, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 10:53:13] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:53:14] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 10:54:36] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:54:36] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:54:37] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 10:54:40] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:54:40] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 10:54:45] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 10:54:46] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 10:54:53] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 10:54:56] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:54:56] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 10:54:57] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 10:55:02] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:55:36] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:56:01] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:56:03] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:56:18] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 10:56:41] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:15:23] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:15:25] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:15:25] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 11:15:28] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:15:31] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:15:33] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:15:33] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 11:15:33] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:15:33] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 11:21:38] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:21:43] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:22:14] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:22:14] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 11:22:16] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:22:16] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 11:22:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:22:16] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 11:22:17] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 11:22:17] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 11:22:18] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:22:19] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:22:20] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:22:23] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:22:24] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:22:24] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 11:22:26] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:24:24] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:25:22] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:25:28] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:25:29] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:25:33] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 11:25:33] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 11:27:33] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 12:52:17] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 12:52:17] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 12:52:18] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 12:52:19] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:38:53] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 19:38:56] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:38:57] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:38:58] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:38:58] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 19:39:02] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:39:02] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:39:02] Logged out 5b50bea668d41608fce944e3
+[2018/06/19 - 19:39:06] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:39:07] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:39:07] Logged out 5b50bea668d41608fce944e3
+[2018/06/19 - 19:39:10] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:39:12] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:39:14] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:39:14] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:40:58] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:41:02] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 19:41:07] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:09:11] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:09:14] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:09:14] Logged out 5b50bea668d41608fce944e3
+[2018/06/19 - 20:09:16] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:09:17] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:11:14] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:25:18] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:25:19] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:25:41] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:25:41] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 20:25:42] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:25:56] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:25:56] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 20:25:57] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:26:04] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:26:04] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 20:26:04] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:26:15] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:26:16] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 20:26:16] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:26:21] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:26:21] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 20:26:21] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:26:33] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:26:33] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 20:26:34] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:26:36] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:26:36] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 20:26:37] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:27:22] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:27:23] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:27:59] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:28:00] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:11] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:28:12] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:17] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:24] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:28:24] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:25] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:26] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:28] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:30] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:32] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:34] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:28:39] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:54:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:54:30] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:54:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:54:57] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:54:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:54:58] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:54:58] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:03] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:03] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:03] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:03] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:03] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:55:17] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:17] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:17] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:32] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:32] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:32] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:32] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:32] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:33] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:33] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:33] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:33] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:33] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:39] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:55:40] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:52] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:55:53] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:56] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:55:57] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:03] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:56:04] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:04] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:04] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:15] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:15] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:15] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:30] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:56:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:32] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:33] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:50] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:56:51] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:56:52] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:04] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:57:05] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:06] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:07] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:21] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:22] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:46] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:57:47] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:49] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:50] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:57:53] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:59:54] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 20:59:55] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 20:59:56] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:12:54] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:13:08] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:13:18] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:13:20] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:13:58] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:13:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:13:59] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:14:17] Client ::ffff:127.0.0.1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:14:18] Client ::ffff:127.0.0.1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:14:20] Client ::ffff:127.0.0.1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:14:21] Client ::ffff:127.0.0.1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:14:48] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:14:50] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:14:50] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:15:00] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:15:01] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:15:01] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:15:03] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:17:06] Client ::ffff:127.0.0.1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:17:08] Client ::ffff:127.0.0.1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:17:09] Client ::ffff:127.0.0.1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:17:36] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:17:36] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:17:38] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:17:44] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:03] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:18:04] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:05] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:22] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:24] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:24] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:24] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:24] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:25] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:26] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:18:29] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:30] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:30] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:31] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:32] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:32] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:32] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:32] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:34] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:37] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:40] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:41] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:43] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:43] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:44] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:18:44] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:19:30] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:31] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:35] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:39] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:42] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:42] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:43] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:19:43] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:09] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:20:10] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:11] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:11] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:14] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:14] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:15] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:20:30] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:31] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:20:31] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:24:12] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:24:13] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:24:30] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:24:30] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:32:34] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:32:35] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:32:57] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:33:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:33:55] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:34:13] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:39:45] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:40:10] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:40:26] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:41:49] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:42:06] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:42:23] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:42:24] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:42:46] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:42:47] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:42:48] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:42:48] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:42:53] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:42:53] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 21:42:56] Client ::ffff:127.0.0.1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:42:58] Client ::ffff:127.0.0.1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:02] Client ::ffff:127.0.0.1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:21] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:23] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:41] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:51] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:52] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:54] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:54] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:55] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:59] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:43:59] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:02] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:03] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:03] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:06] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:06] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:24] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:24] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:27] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:47] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:44:50] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:52] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:53] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:54] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:55] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:56] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:44:58] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:00] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:02] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:07] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:10] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:10] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:20] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:21] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:22] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:23] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:23] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:25] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:25] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:26] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:45:26] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:47:42] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:47:57] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:47:59] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:47:59] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:05] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:48:07] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:07] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:07] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:08] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:09] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:09] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:13] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:14] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:14] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:15] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:16] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:17] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:17] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:20] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:48:58] Client ::ffff:127.0.0.1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:49:01] Client ::ffff:127.0.0.1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:49:01] MongoError: the $sample stage specification must be an object
+[2018/06/19 - 21:50:12] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:13] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:14] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:14] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:14] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:15] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:15] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:15] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:16] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:16] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:16] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:21] Client ::ffff:127.0.0.1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:50:21] Client ::ffff:127.0.0.1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:57] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:58] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:50:58] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:51:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:51:03] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:51:04] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:51:05] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:51:59] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:00] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:00] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:00] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:02] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:52:40] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:52:40] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:53:14] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:14] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 21:53:17] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:18] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:20] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:24] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:24] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 21:53:26] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:28] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:30] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:31] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:31] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:32] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:32] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:32] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:32] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:36] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:37] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:53:37] Logged out 5b5001e32715d0089cf56b81
+[2018/06/19 - 21:54:41] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:54:42] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:54:42] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:55:00] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:55:01] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:55:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:55:05] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:55:05] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:55:06] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:55:08] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:55:08] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:55:09] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:55:12] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:55:12] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:55:13] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:55:43] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:55:44] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:55:44] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:55:44] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:56:30] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:56:31] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:56:31] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 21:56:47] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 21:56:48] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 21:56:49] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:09:46] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:09:59] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:11:42] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:11:46] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:11:49] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:11:52] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:11:52] WriteError({"code":121,"index":0,"errmsg":"Document failed validation","op":{"word":"hsd","definition":"342","userid":"5b50e27553a3972854065d54","username":"123","rating":0,"dislikes":0,"_id":"5b50e27853a3972854065d55"}})
+[2018/06/19 - 22:12:11] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:12:11] WriteError({"code":121,"index":0,"errmsg":"Document failed validation","op":{"word":"hsd","definition":"342","userid":"5b50e27553a3972854065d54","username":"123","rating":0,"dislikes":0,"_id":"5b50e28bad3dab31144ff718"}})
+[2018/06/19 - 22:12:13] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:12:13] WriteError({"code":121,"index":0,"errmsg":"Document failed validation","op":{"word":"hsd","definition":"342","userid":"5b50e27553a3972854065d54","username":"123","rating":0,"dislikes":0,"_id":"5b50e28dad3dab31144ff719"}})
+[2018/06/19 - 22:13:00] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:16:26] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:16:30] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:16:33] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:16:36] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:16:44] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:16:47] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:16:51] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:17:13] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:17:14] Client ::ffff:127.0.0.1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:17:16] Client ::ffff:127.0.0.1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:07] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:18:09] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:19] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:18:20] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:25] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:18:26] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:36] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:18:37] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:43] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:18:45] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:46] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:47] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:49] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:49] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:18:51] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:19:07] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:19:07] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:19:31] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:19:34] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:19:36] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:09] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:20:11] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:14] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:15] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:48] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:20:49] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:50] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:51] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:51] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:51] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:51] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:52] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:52] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:52] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:52] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:53] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:55] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:56] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:58] Client ::1 has accessed /deleteMyDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:58] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:20:59] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:21:24] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:21:35] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:21:35] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:09] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:10] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:24:10] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:24:18] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:24:19] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:20] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:21] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:44] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:24:45] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:45] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:58] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:24:59] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:24:59] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:01] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:25:02] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:03] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:03] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:09] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:25:10] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:23] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:25:23] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:24] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:24] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:39] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:25:40] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:25:47] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:25:48] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:31:13] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:31:15] Client ::1 has accessed /getWordDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:31:48] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:31:48] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:31:49] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:31:59] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:32:00] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:32:01] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:32:13] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:32:14] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:32:14] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:32:51] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:32:51] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:32:52] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:32:58] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:32:58] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:32:59] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:34:03] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:34:41] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:48:18] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:48:19] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:48:21] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:49:22] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:49:24] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:49:26] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:49:54] Client ::ffff:127.0.0.1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:49:55] Client ::ffff:127.0.0.1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:49:56] Client ::ffff:127.0.0.1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:50:57] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:50:59] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:51:00] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:51:26] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:13] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:26] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:28] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:28] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:29] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:30] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:40] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:40] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:52:41] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:53:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:53:18] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:53:19] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:53:21] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:54:10] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:54:11] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:54:11] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:54:13] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:54:14] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:54:15] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:54:17] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:56:49] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:57:29] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:57:30] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:31] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:32] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:33] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:33] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:34] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:35] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:45] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:57:45] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:57:46] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:51] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:57:53] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:06] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:59:07] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:59:08] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:09] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:10] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:12] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:12] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:13] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/19 - 22:59:13] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/19 - 22:59:14] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:31] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:34] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:38] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:40] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:41] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 22:59:42] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 23:00:10] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/19 - 23:00:11] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:10:23] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:41:31] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:41:31] Logged out 5b50e39f9ac0ac0a0c5de35c
+[2018/06/20 - 12:41:31] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:41:48] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/20 - 12:41:58] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:42:07] Client ::1 has accessed /, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:42:07] Client ::1 has accessed /theme.css, requesting file "theme.css" with extension "css"
+[2018/06/20 - 12:42:08] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:42:28] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:42:31] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:42:34] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:43:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:43:17] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:43:17] Logged out 5b51ae8acb009c19c8ddbe20
+[2018/06/20 - 12:43:19] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:43:22] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:43:23] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:43:24] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:43:25] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:43:33] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:43:33] Logged out 5b51ae8acb009c19c8ddbe20
+[2018/06/20 - 12:43:34] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:44:25] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:44:26] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:44:27] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:44:52] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:44:53] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:44:54] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:44:55] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:30] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:46:32] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:33] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:34] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:35] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:36] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:37] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:38] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:51] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:46:54] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:47:56] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:47:57] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/20 - 12:47:57] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:47:58] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:47:58] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:47:58] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:09] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:48:09] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/20 - 12:48:10] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:11] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:11] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:12] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:12] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:13] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:13] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:13] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:14] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:14] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:15] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:15] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:16] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:19] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:20] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:20] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:52] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:54] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:48:54] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:09] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:10] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:11] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:12] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:13] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:15] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:16] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:49:17] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/20 - 12:49:17] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:18] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:19] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:49:19] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:49:20] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/20 - 12:49:21] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:55:40] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:55:41] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/20 - 12:55:41] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:55:42] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:55:44] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:55:46] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:55:46] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:55:48] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:55:48] WriteError({"code":121,"index":0,"errmsg":"Document failed validation","op":{"word":"123","definition":"f","userid":"5b51b1a2f6756037b0433bcb","username":"123","rating":0,"dislikes":0,"_id":"5b51b1a4f6756037b0433bcc"}})
+[2018/06/20 - 12:56:06] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:07] Client ::ffff:127.0.0.1 has accessed /register, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:13] Client ::1 has accessed /logout, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:15] Logged out 5b51b1b73a2aa1317073c8f6
+[2018/06/20 - 12:56:16] Client ::ffff:127.0.0.1 has accessed /login, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:22] Client ::1 has accessed /addDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:22] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:42] Client ::1 has accessed /getRandomWords, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:42] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:46] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"
+[2018/06/20 - 12:56:47] Client ::1 has accessed /favicon.ico, requesting file "favicon.ico" with extension "ico"
+[2018/06/20 - 12:56:47] Client ::1 has accessed /showMyDefinitions, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:56:49] Client ::1 has accessed /voteDefinition, requesting file "undefined" with extension "undefined"
+[2018/06/20 - 12:57:47] Client ::1 has accessed /main.html, requesting file "main.html" with extension "html"

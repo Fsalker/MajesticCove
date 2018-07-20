@@ -16,7 +16,7 @@
 
     Output:
         [!200] error message: string
-         [200] {ssid: string, userid: string}
+         [200] {userData}
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@
 
     Output:
         [!200] error message: string
-         [200] {ssid: string, userid: string}
+         [200] {userData}
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -115,8 +115,8 @@
     Input:
         userid: string
         ssid: string
-        definitionId: string
-        likes: bool
+        definitionid: string
+        likes: boolean
         ownerUserId: string
 
     Output:
@@ -125,7 +125,9 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-    definition = {_id: string, word: string, definition: string, rating: int, dislikes: int, username: string, userkarma: int}
+    definition = {_id: string, userid: string, word: string, definition: string, rating: int, dislikes: int, username: string, userkarma: int}
+    userData = {ssid: string, userid: string, votes: [vote]}
+    vote = {definitionid: objectId, likes: boolean}
 
 --------------------------------------------------------------------------------------------------------------------------------
 

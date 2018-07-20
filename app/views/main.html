@@ -2,6 +2,7 @@
     <!--<link type="text/css" rel="stylesheet" href="theme.css">-->
     <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>-->
     <link type="text/css" rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
     <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -14,6 +15,9 @@
         }
         .dropIn-enter, .dropIn-leave-to /* .fade-leave-active below version 2.1.8 */ {
             opacity: 0;
+        }
+        .icon{
+            cursor: pointer
         }
     </style>
 </head>
@@ -45,7 +49,7 @@
                             <div class="col-9">
                                 <input type="password" id="login_pass" class="form-control" v-model="login.pass" @keydown.enter="login_f">
                             </div>
-                        <div>
+                        </div>
                         <div class="mt-2">
                             <button class="btn btn-success" v-on:click="login_f">Login</button>
                             <img src="Loading.gif" v-if="login.showLoading">
@@ -81,7 +85,7 @@
                 <div class="ml-auto">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
-                            <div class="nav-link text-primary" style="display: inline-block">{{username}}</div>
+                            <div class="nav-link text-light" style="display: inline-block">{{username}}</div>
                         </li>
                         <li>
                             <button class="btn btn-primary" v-on:click="logout">Log Out</button>
@@ -124,10 +128,12 @@
                                 <p>If this is your first time around Majestic Cove, here are a few useful tips you should check out:</p>
                                 <ul>
                                     <li>Search for word meanings in the <strong>Search</strong> tab.</li>
+                                    <li>Explore and learn new words in the <strong>Random</strong> tab</li>
                                     <li>Add your own definitions in the <strong>Add definition</strong> tab.</li>
-                                    <li>Do you want to check your added definitions? See the <strong>My definitions</strong> tab.</li>
+                                    <li>Do you want to check your added definitions? See the <strong>My definitions</strong> tab. You may also delete previously added definitions here.</li>
                                 </ul>
-                                That's all for now! Enjoy your stay.
+                                <p>Of course, you will require an account in order to access all of these features. You may register one right now, unless you already have one.</p>
+                                <span>That's all for now! Enjoy your stay.</span>
                             </div>
                         </template>
                     </transition>
@@ -142,6 +148,11 @@
                                 </div>
                             </div>
                             <word_post v-for="definition in searchWord.wordList" v-bind:definition="definition"></word_post>
+                        </template>
+                        <template v-else-if="activeTabTitle=='Random'">
+                            <backend_alert :data="randomWords"></backend_alert>
+                            <word_post v-for="definition in randomWords.wordList" v-bind:definition="definition"></word_post>
+                            <button class="btn btn-primary" @click="getRandomDefinitions()">New words</button>
                         </template>
                         <template v-if="loggedin">
                             <template v-if="activeTabTitle=='My definitions'">
@@ -162,24 +173,51 @@
         </div>
     </div>
     <script>
-        // Configure here
+        // ================================================================================================================================
+        // ============================================================ CONFIG ============================================================
+        // ================================================================================================================================
         const COOKIE_LIFETIME_DAYS = 1;
 
         // API Front-End Messages
-        const ERROR_BACKEND_SOMETHING = "An error has occurred, please try again. If the error persists, log into your account again."
+        const ERROR_BACKEND_SOMETHING = "An error has occurred, please try again. If this error persists, try logging into your account again."
         const ERROR_WORD_EMPTY = "Please insert a word."
         const ERROR_DEFINITION_EMPTY = "Please insert a definition."
         const ERROR_USERNAME_EMPTY = "Username cannot be empty."
         const ERROR_PASSWORD_EMPTY = "Password cannot be empty."
         const ERROR_USERNAME_TAKEN = "Username is already taken."
         const ERROR_AUTHENTIFICATION_FAILED = "Authentification failed. Check your credentials and try again."
-        const SUCCESS_ADD_DEFINITION = "Your word definition has been succesfully added!"
 
-        // Functions
-        function setAlertObject(obj, msg, alertType){
-            console.log(obj)
+        const WARNING_NO_WORDS_FOUND_AFTER_SEARCH = "Uh oh... There are no results to show for this word. You should add your own definition!"
+        const WARNING_NO_RANDOM_WORDS_FOUND_AFTER_SEARCH = "Oh, there really aren't any definitions to show. You should totally add some by yourself!"
+        const WARNING_NO_DEFINITIONS_ADDED = "You haven't added any definitions yet. Go add some!"
+
+        const SUCCESS_ADD_DEFINITION = "Your word definition has been succesfully added!"
+        const SUCCESS_DELETED_DEFINITION = "Your word definition has been succesfully removed!"
+
+        // ================================================================================================================================
+        // =========================================================== FUNCTIONS ==========================================================
+        // ================================================================================================================================
+        function getTabObjectByTitle(title){ // Gets a Tab object matching the title
+            if(title == "Search") return app.searchWord
+            else if(title == "Random") return app.randomWords
+            else if(title == "My definitions") return app.myDefinitions
+            else if(title == "Add definition") return app.addDefinition
+
+            return undefined
+        }
+
+        function setAlertObject(obj, msg, alertType){ // Sets the Object's Alert response (text) and variant
             obj.response = msg
             obj.responseVariant = alertType
+        }
+
+        function resetAlertObject(obj){ // Resets the Object's Alert properties
+            setAlertObject(obj, "", "")
+        }
+
+        function resetObject(obj){ // Resets all of the Object's properties
+            for(prop in obj)
+                obj[prop] = null
         }
 
         function setCookie(cname, cvalue, exdays) {
@@ -209,13 +247,23 @@
             setCookie(cname, null, 0);
         }
 
-        // Vue Components
+        // ================================================================================================================================
+        // ======================================================== VUE COMPONENTS ========================================================
+        // ================================================================================================================================
         Vue.component("word_post", {
             props: ["definition"], // .definition, .word, .rating, userkarma, .username, .id
             /*template:  `<div class="my-2 p-2" style="color: #66FCF1; background: #1F2833;border: 2px solid #0B0C10; border-radius: .25rem">*/
             template:  `<div class="my-2 p-2" style="color: #66FCF1; background: #1F2833;border: 2px solid #0B0C10; border-radius: .25rem">
                             <p><strong>{{definition.word}}</strong>: {{definition.definition}}</p>
-                            <p>{{definition.rating}} likes, submitted by <a href="#">{{definition.username}}</a></p>
+                            <span>{{definition.likes}} out of {{(definition.likes + definition.dislikes)}} users have appreciated this definition. Submitted by <strong>{{definition.username}}.</strong>
+                                <i class="icon mx-1 far fa-thumbs-up" @click="app.voteDefinition(definition, true)"></i>
+                                <i class="icon far fa-thumbs-down" @click="app.voteDefinition(definition, false)"></i>
+                            </span>
+                            <template v-if="definition.userid==app.userid && app.activeTabTitle=='My definitions'">
+                                <div class="float-right mr-1"">
+                                    <i class="fas fa-trash icon" v-on:click="app.deleteMyDefinition(definition._id)" ></i>
+                                </div>
+                            </template>
                         </div>`
         })
 
@@ -226,27 +274,23 @@
                         </b-alert>`
         })
 
-        // Vue App
+        // ================================================================================================================================
+        // ============================================================ VUE APP ===========================================================
+        // ================================================================================================================================
         var app = new Vue({
             el: "#app",
+            // ========================================================= app.data =========================================================
             data: {
                     // App
                 tabs: [
-                    {
-                        title: "Search",
-                        visible: true
-                    },
-                    {
-                        title: "My definitions",
-                        visible: true
-                    },
-                    {
-                        title: "Add definition",
-                        visible: true
-                    }
+                    { title: "Search", visible: true },
+                    { title: "Random", visible: true },
+                    { title: "My definitions", visible: false},
+                    { title: "Add definition", visible: false}
                 ],
                 activeTabTitle: "Search",
                 showHelp: false,
+                showDebugData: false,
 
                     // Cookies
                 username: getCookie("username"),
@@ -256,6 +300,13 @@
                     // Search Word
                 searchWord: {
                     word: null,
+                    response: null,
+                    responseVariant: null,
+                    wordList: null
+                },
+
+                    // Random Words
+                randomWords: {
                     response: null,
                     responseVariant: null,
                     wordList: null
@@ -291,22 +342,83 @@
                     pass: null,
                     response: null,
                     responseVariant: null
-                },
-
-                    // Other
-                showDebugData: false
-            },
-            computed: {
-                loggedin: function(){
-                    var result = this.ssid && this.userid
-                    for(tab of this.tabs)
-                        if(tab.title == "My definitions" || tab.title == "Add definition")
-                            tab.visible = result
-                    return result
                 }
             },
+            // ======================================================= app.computed =======================================================
+            computed: {
+                loggedin: function(){ // Tells us whether the user is currently logged in
+                    var newLoginState = (this.ssid && this.userid)? true : false
+                    return newLoginState
+                },
+
+                activeTabObject: function(){
+                    return getTabObjectByTitle(this.activeTabTitle)
+                }
+            },
+            // ======================================================== app.watch =========================================================
+            watch: {
+                loggedin: {
+                    immediate: true,
+                    handler: function(newLoginState){ // Tells us whether the user is currently logged
+                        console.log("Loggedin state has changed!\n\n")
+                        var SHOW_ONLY_WHEN_LOGGED_IN = ["My definitions", "Add definition"]
+                        var changingTab = false
+                        console.log("------------------------")
+                        for(tab of this.tabs) {
+                            if (SHOW_ONLY_WHEN_LOGGED_IN.indexOf(tab.title) != -1) { // We hide a few certain tabs when we're not logged in
+                                if (tab.visible == true && newLoginState == false) // Hiding a tab that's currently visible
+                                    if (tab.title == this.activeTabTitle) // Hiding the currently active tab
+                                        changingTab = true
+                                tab.visible = newLoginState
+                            }
+                        }
+                        if(changingTab) // [Super bug v1] I fixed "super bug v1" by calling changeActiveTab() outside the for loop... But why does it work now?
+                            this.changeActiveTab("Search") // Change to our 'Search' tab
+                        if(newLoginState) { // We're logged in, therefore we reset the Login & Register objects
+                            resetObject(this.register)
+                            resetObject(this.login)
+                        }
+                        else { // We're logged out, so we wipe our stored definitions (and all personal, sensitive data :^) )
+                            resetObject(this.myDefinitions)
+                            resetObject(this.addDefinition)
+                        }
+                    }
+                }
+            },
+            // ======================================================== app.methods =======================================================
             methods: {
-                getWordDefinitions(){
+                voteDefinition(definition, likes){ // Vote a definition. likes = true / false
+                    data = {
+                        userid: app.userid,
+                        ssid: app.ssid,
+                        definitionid: definition._id,
+                        likes: likes,
+                        ownerUserid: definition.userid
+                    }
+
+                    var req = new XMLHttpRequest()
+                    req.open("POST", "voteDefinition")
+                    req.setRequestHeader("content-type", "application/json")
+                    req.send(JSON.stringify(data))
+
+                    req.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            likeStr = likes?"liked":"disliked"
+                            if (this.status == 200) {
+                                console.log("Success!!1")
+
+                                setAlertObject(app.activeTabObject, "You have succesfully "+likeStr+" the definition!", "success")
+                                console.log(definition._id)
+                                definition.likes +=
+                                definition.dislikes += !likes
+                            }
+                            else if(this.status == 409) setAlertObject(app.activeTabObject, "You have already "+likeStr+" the definition!", "warning")
+                            else setAlertObject(app.activeTabObject, ERROR_BACKEND_SOMETHING, "danger")
+                        }
+                    }
+                },
+
+                getWordDefinitions(){ // Search words
                     if(!app.searchWord.word) setAlertObject(app.searchWord, ERROR_WORD_EMPTY, "warning")
                     else {
                         data = {
@@ -328,7 +440,8 @@
 
                                     app.searchWord.wordList = res["words"]
                                     app.searchWord.response = null
-                                    console.log(app.searchWord.wordList)
+                                    if(app.searchWord.wordList.length == 0)
+                                        setAlertObject(app.searchWord, WARNING_NO_WORDS_FOUND_AFTER_SEARCH, "secondary")
                                 }
                                 else setAlertObject(app.searchWord, ERROR_BACKEND_SOMETHING, "danger")
                             }
@@ -336,7 +449,34 @@
                     }
                 },
 
-                getMyDefinitions(){
+                deleteMyDefinition(definitionId){ // Delete one of my definitions
+                    data = {
+                        userid: app.userid,
+                        ssid: app.ssid,
+                        "definitionid": definitionId
+                    }
+                    console.log("Data = ")
+                    console.log(data)
+
+                    console.log("Deleting "+definitionId)
+
+                    var req = new XMLHttpRequest()
+                    req.open("POST", "deleteMyDefinition")
+                    req.setRequestHeader("content-type", "application/json")
+                    req.send(JSON.stringify(data))
+
+                    req.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                app.getMyDefinitions()
+                                //setAlertObject(app.myDefinitions, SUCCESS_DELETED_DEFINITION, "success")
+                            }
+                            else setAlertObject(app.login, ERROR_BACKEND_SOMETHING, "danger")
+                        }
+                    }
+                },
+
+                getMyDefinitions(){ // Show my definitions
                     data = {
                         userid: app.userid,
                         ssid: app.ssid
@@ -346,7 +486,7 @@
 
                     var req = new XMLHttpRequest
                     req.open("POST", "showMyDefinitions")
-                    req.setRequestHeader("conten-type", "application/json")
+                    req.setRequestHeader("content-type", "application/json")
                     req.send(JSON.stringify(data))
 
                     req.onreadystatechange = function(){
@@ -356,14 +496,34 @@
 
                                 app.myDefinitions.wordList = res["words"]
                                 app.myDefinitions.response = null
-                                console.log(res)
+                                if(app.myDefinitions.wordList.length == 0)
+                                    setAlertObject(app.myDefinitions, WARNING_NO_DEFINITIONS_ADDED, "secondary")
                             }
                             else setAlertObject(app.myDefinitions, ERROR_BACKEND_SOMETHING, "danger")
                         }
                     }
                 },
 
-                submitDefinition(){
+                getRandomDefinitions(){ // Get some definitions!
+                    var req = new XMLHttpRequest
+                    req.open("POST", "getRandomWords")
+                    req.send()
+                    req.onreadystatechange = function(){
+                        if(this.readyState == 4){
+                            if(this.status == 200){
+                                res = JSON.parse(this.response)
+
+                                app.randomWords.wordList = res["words"]
+                                app.randomWords.response = null
+                                if(app.randomWords.wordList.length == 0)
+                                    setAlertObject(app.randomWords, WARNING_NO_RANDOM_WORDS_FOUND_AFTER_SEARCH, "secondary")
+                            }
+                            else setAlertObject(app.addDefinition, ERROR_BACKEND_SOMETHING, "danger")
+                        }
+                    }
+                },
+
+                submitDefinition(){ // Add a definition
                     if(!app.addDefinition.word) setAlertObject(app.addDefinition, ERROR_WORD_EMPTY, "warning")
                     else if(!app.addDefinition.definition) setAlertObject(app.addDefinition, ERROR_DEFINITION_EMPTY, "warning")
                     else{
@@ -395,14 +555,32 @@
                     }
                 },
 
-                changeActiveTab(tabTitle){
+                changeActiveTab(tabTitle){ // Change the tab
                     app.activeTabTitle = tabTitle
+                    for(tab of app.tabs)
+                        if(tab.title != tabTitle) // [Super bug v1] accessing tab.title causes our 'My definitions' tab to have its .visible property set to false
+                            resetAlertObject(tab)
+
                     if(tabTitle == "My definitions"){
                         app.getMyDefinitions()
                     }
+                    else if(tabTitle == "Random"){
+                        app.getRandomDefinitions()
+                    }
                 },
 
-                login_f(){
+                login_credentials(userid, ssid, username, votes){ // Set the login credentials into our app and cookies :]
+                    app.userid = userid
+                    app.ssid = ssid
+                    app.username = username
+                    app.votes = votes
+
+                    setCookie("userid", userid, COOKIE_LIFETIME_DAYS)
+                    setCookie("ssid", ssid, COOKIE_LIFETIME_DAYS)
+                    setCookie("username", username, COOKIE_LIFETIME_DAYS)
+                },
+
+                login_f(){ // Log me in
                     app.showLoadingLogin = true;
 
                     // Validate the data
@@ -426,16 +604,8 @@
                                 console.log(this.response);
                                 if (this.status == 200) {
                                     res = JSON.parse(this.response)
-                                    app.login_pass = null
 
-                                    app.ssid = res.ssid
-                                    app.userid = res.userid
-                                    app.username = data.user
-                                    app.login.user = null
-                                    app.login.pass = null
-                                    setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
-                                    setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
-                                    setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
+                                    app.login_credentials(res.userid, res.ssid, data.user, res.votes)
                                 }
                                 else if(this.status == 401) setAlertObject(app.login, ERROR_AUTHENTIFICATION_FAILED, "danger")
                                 else setAlertObject(app.login, ERROR_BACKEND_SOMETHING, "danger")
@@ -443,7 +613,7 @@
                         }
                     }
                 },
-                register_f(){
+                register_f(){ // Register me
                     // Validate the data
                     if(!app.register.user) setAlertObject(app.register, ERROR_USERNAME_EMPTY, "warning")
                     else if(!app.register.pass) setAlertObject(app.register, ERROR_PASSWORD_EMPTY, "warning")
@@ -468,27 +638,16 @@
                                 if (this.status == 200) {
                                     res = JSON.parse(this.response)
 
-                                    app.ssid = res.ssid
-                                    app.userid = res.userid
-                                    app.username = data.user
-                                    app.register.user = null
-                                    app.register.pass = null
-
-                                    setCookie("ssid", res.ssid, COOKIE_LIFETIME_DAYS)
-                                    setCookie("userid", res.userid, COOKIE_LIFETIME_DAYS)
-                                    setCookie("username", data.user, COOKIE_LIFETIME_DAYS)
-
-                                    console.log(res)
-
-                                    //setAlertObject(app.register, "Registered succesfully!", "danger")
+                                    app.login_credentials(res.userid, res.ssid, data.user, res.votes)
                                 }
-                                else if(this.status == 409) setAlertObject(app.register, ERROR_USERNAME_TAKEN, "danger")
+                                else if(this.status == 409) // Register conflict. The only possibility is an already taken username
+                                    setAlertObject(app.register, ERROR_USERNAME_TAKEN, "danger")
                                 else setAlertObject(app.register, ERROR_BACKEND_SOMETHING, "danger")
                             }
                         }
                     }
                 },
-                logout(){
+                logout(){ // Log me out
                     var req = new XMLHttpRequest();
                     req.open("POST", "/logout")
                     req.setRequestHeader("content-type", "application/json")
@@ -499,9 +658,6 @@
                     deleteCookie("username")
                     deleteCookie("userid")
                     deleteCookie("ssid")
-
-                    app.register.response = null
-                    app.login.response = null
                 }
             }
         });

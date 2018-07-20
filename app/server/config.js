@@ -20,6 +20,9 @@ module.exports = {
     VIEWS_PATH: "./app/views/",
     HTML_RESPONSES: HTML_RESPONSES,
     databaseURL: "mongodb://localhost:27017/MajesticCoveDB",
+    MAX_WORD_RESULTS: 30,
+    MAX_RANDOM_WORD_RESULTS: 4,
+
     log: function(msg){ // Prints the message to the console and logs it inside a file
         var logFile = fs.createWriteStream("log.txt", {flags: "a"})
         d = new Date()

@@ -47,7 +47,7 @@ module.exports = {
                 }
             }, function(err, data){
                 if(err) cfg.log(err)
-                dbo.collection("users").ensureIndex({"username": 1}, {unique: true}, function(err, res){
+                dbo.collection("users").ensureIndex({"username": 1}, {unique: true}, function(err, res){ // Unique username
                     if(err) cfg.log(err)
                 })
             })
@@ -56,7 +56,7 @@ module.exports = {
                 validator:{
                     $jsonSchema: {
                         bsonType: "object",
-                        required: ["word", "definition", "userid", "rating"],
+                        required: ["word", "definition", "userid", "likes", "dislikes"],
                         properties: {
                             word: {
                                 bsonType: "string",
@@ -67,11 +67,14 @@ module.exports = {
                             username: {
                                 bsonType: "string",
                             },
-                            rating: {
+                            userid: {
+                                bsonType: "objectId"
+                            },
+                            likes: {
                                 bsonType: "int"
                             },
-                            userid: {
-                                bsonType: "ObjectId"
+                            dislikes: {
+                                bsonType: "int"
                             }
                         }
                     }
@@ -80,9 +83,10 @@ module.exports = {
                 if(err) cfg.log(err)
             })
         }
-        
+
         if(DROP_COLLECTIONS)
-            dbo.dropDatabase("users", function(){
+            dbo.dropDatabase("users", function(err){
+                if(err) cfg.log(err)
                 dbo.dropDatabase("definitions", createCollections())
             })
         else

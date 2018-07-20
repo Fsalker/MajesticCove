@@ -24,7 +24,7 @@ function serverHandler(req, res){
     if(requestedFile) fileExtension = requestedFile.split(".").pop();
     
     // Log the request
-    cfg.log("Client "+clientIP+" has accessed "+url+", requesting file = "+requestedFile+" with extension "+fileExtension)
+    cfg.log("Client "+clientIP+" has accessed "+url+", requesting file \""+requestedFile+"\" with extension \""+fileExtension+"\"")
 
     // Handle the request
     if(fileExtension){ // Requesting a .file
@@ -63,6 +63,9 @@ function serverHandler(req, res){
                 break;
             case "/voteDefinition":
                 webHandler.voteDefinitionHandler(req, res, dbo)
+                break;
+            case "/getRandomWords":
+                webHandler.getRandomWordsHandler(req, res, dbo)
                 break;
             default:
                 throws.throwResponse(res, 404);
