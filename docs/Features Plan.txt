@@ -70,6 +70,8 @@
         [ ] "Loading..." for every API call on the front end :D
         [ ] When the database is dropped (reset), upload a dictionary with username 'admin' and 50+ votes
         [ ] Limit IP address to 3 accounts created and 100 definitions uploaded per day
+        [ ] Auto suggest as the user types in a word to Search.
+        [ ] Fix the User's word with no matchings (Levenshtein distance)
 
 
             Help pls
