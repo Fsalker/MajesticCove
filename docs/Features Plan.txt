@@ -28,7 +28,7 @@
         [x]     /showMyDefinitions
         [x]     /deleteMyDefinition
         [x]     /getWordDefinitions
-        [ ]     /voteDefinition
+        [x]     /voteDefinition
         [x]     /getRandomWords
         [ ]     Karma system:
 
@@ -51,6 +51,7 @@
         [x] reset location to Search tab if user logs out while in loggedin-only tab
         [x] Fix regex search word search (case insensitivity: searching "1" shows results for "123")
             -> [x] Check that the same does not apply to passwords...
+        [x] Store Votes in the cookies
 
         [ ] HTTPS: https://letsencrypt.org
 
@@ -65,6 +66,10 @@
         [ ] "Are you sure you want to remove the definition?"
         [ ] Better Animations:
             [ ] Animated word results (Search & Random)
+            [ ] Animated API responses
+        [ ] "Loading..." for every API call on the front end :D
+        [ ] When the database is dropped (reset), upload a dictionary with username 'admin' and 50+ votes
+        [ ] Limit IP address to 3 accounts created and 100 definitions uploaded per day
 
 
             Help pls

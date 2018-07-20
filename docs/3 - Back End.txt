@@ -116,7 +116,7 @@
         userid: string
         ssid: string
         definitionid: string
-        likes: boolean
+        likes: boolean      // 1 for Like, -1 for Dislike
         ownerUserId: string
 
     Output:
@@ -127,7 +127,7 @@
 
     definition = {_id: string, userid: string, word: string, definition: string, rating: int, dislikes: int, username: string, userkarma: int}
     userData = {ssid: string, userid: string, votes: [vote]}
-    vote = {definitionid: objectId, likes: boolean}
+    vote = {definitionid: objectId, likes: int}
 
 --------------------------------------------------------------------------------------------------------------------------------
 

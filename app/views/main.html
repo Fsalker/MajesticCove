@@ -152,7 +152,7 @@
                         <template v-else-if="activeTabTitle=='Random'">
                             <backend_alert :data="randomWords"></backend_alert>
                             <word_post v-for="definition in randomWords.wordList" v-bind:definition="definition"></word_post>
-                            <button class="btn btn-primary" @click="getRandomDefinitions()">New words</button>
+                            <button class="btn btn-primary" @click="getRandomDefinitions()">Refresh</button>
                         </template>
                         <template v-if="loggedin">
                             <template v-if="activeTabTitle=='My definitions'">
@@ -197,6 +197,43 @@
         // ================================================================================================================================
         // =========================================================== FUNCTIONS ==========================================================
         // ================================================================================================================================
+        function getDefinitionIconClass(definition, thumbs){ // Gives us the appropriate "fas", "far" or "" class for a given definition's thumbs up or thumbs down icon (based on whether the user has liked/disliked the post)
+            console.log(app.votes)
+            if(!app.votes) return "far"
+            vote = app.votes.filter( vote => vote.definitionid == definition._id)[0]
+
+            console.log(vote)
+            if(vote == undefined)
+                return "far"
+            else
+                console.log("thumbs = "+thumbs)
+                if(thumbs == "up")
+                    return vote.likes == 1 ? "fas" : "far"
+                else if(thumbs == "down")
+                    return vote.likes == -1 ? "fas" : "far"
+                else console.log("Wrong 'thumbs' type")
+
+            //console.log("I've somehow reached the end of the function ;o")
+        }
+
+        function dislikedDefinition(definition){ // Same as above, but reversed :~)
+            return !likedDefinition(definition)
+        }
+
+        function saveVote(definition, likes){ // Saves a liked/disliked definition in app.votes & cookies
+            vote = app.votes.filter( vote => vote.definitionid == definition._id)[0]
+
+            if(vote == undefined) { // First time voting this definition, so we push a new vote
+                app.votes.push({definitionid: definition._id, likes: likes})
+                console.log("Pushed a new vote")
+            }
+            else { // Updating the existing vote
+                vote.likes = likes
+                console.log("Updated the vote")
+            }
+            setCookie("votes", JSON.stringify(app.votes))
+        }
+
         function getTabObjectByTitle(title){ // Gets a Tab object matching the title
             if(title == "Search") return app.searchWord
             else if(title == "Random") return app.randomWords
@@ -243,6 +280,14 @@
             return "";
         }
 
+        function getJsonCookie(cname){
+            jsonStr = getCookie(cname)
+            if(jsonStr)
+                return JSON.parse(jsonStr)
+            else
+                return undefined
+        }
+
         function deleteCookie(cname){
             setCookie(cname, null, 0);
         }
@@ -256,8 +301,8 @@
             template:  `<div class="my-2 p-2" style="color: #66FCF1; background: #1F2833;border: 2px solid #0B0C10; border-radius: .25rem">
                             <p><strong>{{definition.word}}</strong>: {{definition.definition}}</p>
                             <span>{{definition.likes}} out of {{(definition.likes + definition.dislikes)}} users have appreciated this definition. Submitted by <strong>{{definition.username}}.</strong>
-                                <i class="icon mx-1 far fa-thumbs-up" @click="app.voteDefinition(definition, true)"></i>
-                                <i class="icon far fa-thumbs-down" @click="app.voteDefinition(definition, false)"></i>
+                                <i class="icon mx-1 fa-thumbs-up" @click="app.voteDefinition(definition, 1)" v-bind:class="getDefinitionIconClass(definition, 'up')"></i>
+                                <i class="icon fa-thumbs-down" @click="app.voteDefinition(definition, -1)" v-bind:class="getDefinitionIconClass(definition, 'down')"></i>
                             </span>
                             <template v-if="definition.userid==app.userid && app.activeTabTitle=='My definitions'">
                                 <div class="float-right mr-1"">
@@ -296,6 +341,7 @@
                 username: getCookie("username"),
                 userid: getCookie("userid"),
                 ssid: getCookie("ssid"),
+                votes: getJsonCookie("votes"),
 
                     // Search Word
                 searchWord: {
@@ -388,6 +434,11 @@
             // ======================================================== app.methods =======================================================
             methods: {
                 voteDefinition(definition, likes){ // Vote a definition. likes = true / false
+                    if(!app.loggedin){
+                        setAlertObject(app.activeTabObject, "You must be logged in in order to vote definitions.", "warning")
+                        return;
+                    }
+
                     data = {
                         userid: app.userid,
                         ssid: app.ssid,
@@ -403,14 +454,16 @@
 
                     req.onreadystatechange = function () {
                         if (this.readyState == 4) {
-                            likeStr = likes?"liked":"disliked"
+                            likeStr = likes==1?"liked":"disliked"
                             if (this.status == 200) {
+                                res = JSON.parse(this.response)
                                 console.log("Success!!1")
 
-                                setAlertObject(app.activeTabObject, "You have succesfully "+likeStr+" the definition!", "success")
-                                console.log(definition._id)
-                                definition.likes +=
-                                definition.dislikes += !likes
+                                //setAlertObject(app.activeTabObject, "You have succesfully "+likeStr+" the definition!", "success")
+                                resetAlertObject(app.activeTabObject)
+                                definition.likes += res.likeAdd
+                                definition.dislikes += res.dislikeAdd
+                                saveVote(definition, likes)
                             }
                             else if(this.status == 409) setAlertObject(app.activeTabObject, "You have already "+likeStr+" the definition!", "warning")
                             else setAlertObject(app.activeTabObject, ERROR_BACKEND_SOMETHING, "danger")
@@ -556,6 +609,10 @@
                 },
 
                 changeActiveTab(tabTitle){ // Change the tab
+                    if(app.activeTabTitle == tabTitle)
+                        return;
+
+
                     app.activeTabTitle = tabTitle
                     for(tab of app.tabs)
                         if(tab.title != tabTitle) // [Super bug v1] accessing tab.title causes our 'My definitions' tab to have its .visible property set to false
@@ -578,6 +635,7 @@
                     setCookie("userid", userid, COOKIE_LIFETIME_DAYS)
                     setCookie("ssid", ssid, COOKIE_LIFETIME_DAYS)
                     setCookie("username", username, COOKIE_LIFETIME_DAYS)
+                    setCookie("votes", JSON.stringify(votes), COOKIE_LIFETIME_DAYS)
                 },
 
                 login_f(){ // Log me in
@@ -654,10 +712,13 @@
                     req.send(JSON.stringify({ssid: this.ssid, userid: this.userid}));
 
                     this.username = null
+                    this.userid = null
                     this.ssid = null
+                    this.votes = null
                     deleteCookie("username")
                     deleteCookie("userid")
                     deleteCookie("ssid")
+                    deleteCookie("votes")
                 }
             }
         });

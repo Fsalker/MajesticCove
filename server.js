@@ -38,7 +38,8 @@ function serverHandler(req, res){
     else { // Requesting something else than a file
         switch (url){
             case "/":
-                webHandler.defaultHandler(req, res, dbo)
+                //webHandler.defaultHandler(req, res, dbo)
+                throws.throwServedFile(res, "main.html")
                 break;
             case "/login":
                 webHandler.loginHandler(req, res, dbo)

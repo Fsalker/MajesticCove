@@ -197,46 +197,41 @@ function voteDefinition(res, dbo, data) { // data: userid, likes, definitionid, 
             likeAdd = undefined
             dislikeAdd = undefined
 
-            if(vote)
-                voteLikes = vote.likes
+            if(vote) voteLikes = vote.likes
 
-            console.log("vote = "+vote)
+            console.log("voteLikes = "+voteLikes)
             if (voteLikes == undefined) { // User votes for the first time
-                likeAdd = data.likes
-                dislikeAdd = !data.likes
+                likeAdd = data.likes==1?1:0
+                dislikeAdd = data.likes==1?0:1
             }
-            else { // User reverses their previous vote
-                if(data.likes == voteLikes)
+            else { // User votes again
+                if(data.likes == voteLikes) //  User tries voting again, with the same value
                     throws.throwResponse(res, 409, "The definition has already been voted for, with the same value!")
-                else {
-                    if(voteLikes){ // Dislike becomes Like
-                        likeAdd = 1
-                        dislikeAdd = -1
-                    }
-                    else { // Like becomes Dislike
-                        likeAdd = -1
-                        dislikeAdd = 1
-                    }
+                else { // User reverses their previous vote
+                    //likeAdd = voteLikes? -1 : 1 // If we previously Liked, we make it a dislike
+                    //dislikeAdd = voteLikes? 1 : -1 // And vice-versa
+                    likeAdd = data.likes
+                    dislikeAdd = -1 * data.likes
                 }
             }
-            console.log(likeAdd)
-            console.log(dislikeAdd)
+            console.log("Previous like = "+voteLikes)
+            console.log("Current like = "+data.likes)
+            console.log("Like add = " + likeAdd)
+            console.log("Dislike add = " + dislikeAdd)
 
-            if (likeAdd || dislikeAdd) { // If we're voting properly
+            if (likeAdd != undefined && dislikeAdd != undefined) { // If we're voting properly
 
                 dbo.collection("definitions").update({_id: data.definitionid}, {$inc: {likes: likeAdd, dislikes: dislikeAdd}}, function (err, upd_res) {
-                    if (err) {
-                        log(err)
-                        throws.throwResponse(res, 500)
-                    }
+                    if (err)
+                        logAndThrow500(err, res)
                     else {
                         var bulk = dbo.collection("users").initializeOrderedBulkOp();
                         bulk.find({_id: data.userid}).updateOne({$pull: {votes: {definitionid: data.definitionid}}})
-                        bulk.find({_id: data.userid}).updateOne({$push: {votes: {definitionid: data.definitionid, likes: likeAdd}}})
+                        bulk.find({_id: data.userid}).updateOne({$push: {votes: {definitionid: data.definitionid, likes: data.likes==1?1:-1}}})
                         bulk.find({_id: data.ownerUserid}).updateOne({$inc: {karma: likeAdd ? 1 : -1}})
                         bulk.execute()
                         console.log("OK!!!")
-                        throws.throwResponse(res, 200)
+                        throws.throwResponse(res, 200, JSON.stringify({likeAdd: likeAdd, dislikeAdd: dislikeAdd}))
                     }
                 })
             }
@@ -331,12 +326,10 @@ module.exports = {
 
     voteDefinitionHandler: function(req, res, dbo){
         handlePostRequest(req, res, dbo, function(res, dbo, data){
-            console.log("data = ")
-            console.log(data)
             if (!data.userid || typeof data.userid != "string" || data.userid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid userid.")
             else if (!data.ssid || typeof data.ssid != "string") throws.throwResponse(res, 400, "Invalid ssid.")
             else if (!data.definitionid || typeof data.definitionid != "string" || data.definitionid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid definitionid.")
-            else if (typeof data.likes != "boolean") throws.throwResponse(res, 400, "Invalid like/dislike .")
+            else if (typeof data.likes != "number" || (data.likes != -1 && data.likes != 1)) throws.throwResponse(res, 400, "Invalid like/dislike .")
             else if (!data.ownerUserid || typeof data.ownerUserid != "string" || data.ownerUserid.length != cfg.ID_STRING_LENGTH) throws.throwResponse(res, 400, "Invalid ownerUserid.")
             else authentificate_userid_ssid(res, dbo, {
                     userid: ObjectID.createFromHexString(data.userid),
