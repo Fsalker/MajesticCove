@@ -3,10 +3,11 @@ Browse plenty of word definitions and add your own!
 
 # Techs used
 -   [NodeJS](https://nodejs.org/en/) - Web Server
--   [Express](https://expressjs.com/) v4.16.3 - NodeJS framework
 -   [MongoDB](https://www.mongodb.com/) v4.0.0 - Database
 -   [Vue.JS](https://vuejs.org/) v2.5.16- Front-end JS framework
 -   [Bootstrap-Vue](https://bootstrap-vue.js.org/) v4.0.0 - Extra front-end Components
+
+(This list might be a little outdated.)
 
 # Installation
 1. Clone the repository

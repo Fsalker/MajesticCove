@@ -72,6 +72,10 @@
         [ ] Limit IP address to 3 accounts created and 100 definitions uploaded per day
         [ ] Auto suggest as the user types in a word to Search.
         [ ] Fix the User's word with no matchings (Levenshtein distance)
+        [ ] 304 "Not Modified" HTTP response (aka cache)
+        [ ] "Help!" more intuitively:
+            [ ] "Type a word in to see its meaning..."
+            [ ] Tooltip when an user enters for the first time
 
 
             Help pls
