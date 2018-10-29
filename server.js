@@ -76,8 +76,10 @@ function serverHandler(req, res){
 }
 
 // [Database connection] aka Main handler
+console.log("Connecting to DB...")
 MongoClient.connect(cfg.databaseURL, {useNewUrlParser: true}, function(err, client){
     if(err) throw err;
+    console.log("Connected to DB!")
 
     /// =====================================[ Create Database ]=====================================
     dbo = client.db("MajesticCoveDB")
@@ -85,5 +87,7 @@ MongoClient.connect(cfg.databaseURL, {useNewUrlParser: true}, function(err, clie
 
     /// =====================================[ Start Web Server ]=====================================
     var server = http.createServer(serverHandler);
-    server.listen(80);
+    let PORT = 4000
+    server.listen(PORT);
+    console.log("Listening on port "+PORT)
 })
