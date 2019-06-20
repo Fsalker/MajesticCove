@@ -1,7 +1,8 @@
 var MongoClient = require("mongodb").MongoClient;
 
 var http = require("http")
-var fs = require("fs")
+let https  = require("https")
+let fs = require("fs")
 
 const modulesPath = "./app/server/"
 var cfg = require(modulesPath+"config.js")
@@ -11,11 +12,12 @@ var dbSchema = require(modulesPath+"dbSchema.js")
 
 // [Server handler]
 function serverHandler(req, res){
+    console.log("Received a request...")
     const clientIP = res.socket.remoteAddress;
     const url = req.url;
     var requestedFile = undefined;
     var fileExtension = undefined;
-
+    
     // Figure out the requested file and its extension
     rightmostItem = req.url.split("/").pop();
     if(rightmostItem.indexOf(".") == -1) requestedFile = undefined; // Not a file
@@ -86,8 +88,33 @@ MongoClient.connect(cfg.databaseURL, {useNewUrlParser: true}, function(err, clie
     dbSchema.createDatabase(dbo);
 
     /// =====================================[ Start Web Server ]=====================================
-    var server = http.createServer(serverHandler);
-    let PORT = 4000
-    server.listen(PORT);
+    const PORT = 4000
+    let server
+    let HTTPS_ENABLED = false
+    let http_options
+
+    try{
+        const CERTIFICATE_LOCATION = "/etc/letsencrypt/live/andrei-puiu.dev"
+        http_options = {
+            key: fs.readFileSync(`${CERTIFICATE_LOCATION}/privkey.pem`),
+            cert: fs.readFileSync(`${CERTIFICATE_LOCATION}/cert.pem`),
+        }
+        HTTPS_ENABLED = true
+    }catch(e){
+        console.log("Failed to acquire HTTPS certificate")
+        console.log(e)
+    }
+
+    if(HTTPS_ENABLED){
+        server = https.createServer(http_options, serverHandler)
+        server.listen(PORT)
+        console.log(`HTTPS server is running on PORT ${PORT}...`)
+    } else {
+        http.createServer(serverHandler);
+        server = http.createServer(serverHandler)
+        server.listen(PORT)
+        console.log(`HTTP server is running on PORT ${PORT}...`)
+    }
+
     console.log("Listening on port "+PORT)
 })
