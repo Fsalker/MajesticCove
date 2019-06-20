@@ -3980,3 +3980,9 @@
 [2018/09/29 - 12:51:49] Client ::1 has accessed /login, requesting file "undefined" with extension "undefined"
 [2018/09/29 - 12:51:53] Client ::1 has accessed /register, requesting file "undefined" with extension "undefined"
 [2018/09/29 - 12:51:53] BulkWriteError: E11000 duplicate key error collection: MajesticCoveDB.users index: username_1 dup key: { : "cooldude98" }
+[2019/05/20 - 16:19:35] Client ::ffff:213.233.108.120 has accessed /, requesting file "undefined" with extension "undefined"
+[2019/05/20 - 16:19:35] Client ::ffff:213.233.108.120 has accessed /main.js, requesting file "main.js" with extension "js"
+[2019/05/20 - 16:19:48] Client ::ffff:213.233.108.120 has accessed /, requesting file "undefined" with extension "undefined"
+[2019/05/20 - 16:19:48] Client ::ffff:213.233.108.120 has accessed /main.js, requesting file "main.js" with extension "js"
+[2019/05/20 - 16:20:07] Client ::ffff:213.233.108.120 has accessed /, requesting file "undefined" with extension "undefined"
+[2019/05/20 - 16:20:08] Client ::ffff:213.233.108.120 has accessed /main.js, requesting file "main.js" with extension "js"

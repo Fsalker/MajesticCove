@@ -12,7 +12,6 @@ var dbSchema = require(modulesPath+"dbSchema.js")
 
 // [Server handler]
 function serverHandler(req, res){
-    console.log("Received a request...")
     const clientIP = res.socket.remoteAddress;
     const url = req.url;
     var requestedFile = undefined;
