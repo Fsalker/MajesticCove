@@ -1,0 +1,176 @@
+<head>
+    <!--<link type="text/css" rel="stylesheet" href="theme.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>-->
+    <link type="text/css" rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!--<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>-->
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <!--    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>-->
+    <style>
+        .dropIn-enter-active, .dropIn-leave-active {
+            transition: all 0.5s;
+        }
+        .dropIn-enter, .dropIn-leave-to /* .fade-leave-active below version 2.1.8 */ {
+            opacity: 0;
+        }
+        .icon{
+            cursor: pointer
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-dark navbar-expand-sm navbar-light bg-primary">
+            <a class="navbar-brand" href="#">Majestic Cove</a>
+
+            <template v-if="!loggedin">
+                <div class="ml-auto">
+                    <button id="loginBtn" class="btn btn-secondary">Login</button>
+                    <button id="registerBtn" class="btn btn-secondary">Register</button>
+
+                    <b-popover target="loginBtn" triggers="focus" placement="auto" title="Login">
+                        <backend_alert :data="login">hihi</backend_alert>
+                        <div class="form-row">
+                            <div class="col-3 col-form-label">
+                                <label for="login_user">Username</label>
+                            </div>
+                            <div class="col-9">
+                                <input id="login_user" class="form-control" v-model="login.user" @keydown.enter="login_f">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-form-label">
+                                <label for="login_pass">Password</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="password" id="login_pass" class="form-control" v-model="login.pass" @keydown.enter="login_f">
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-success" v-on:click="login_f">Login</button>
+                            <img src="Loading.gif" v-if="login.showLoading">
+                        </div>
+                    </b-popover>
+
+                    <b-popover target="registerBtn" triggers="focus" placement="auto" title="Register">
+                        <backend_alert :data="register"></backend_alert>
+                        <div class="form-row">
+                            <div class="col-3 col-form-label">
+                                <label for="register_user">Username</label>
+                            </div>
+                            <div class="col-9">
+                                <input id="register_user" class="form-control" v-model="register.user" @keydown.enter="register_f">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-form-label">
+                                <label for="register_pass">Password</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="password" id="register_pass" class="form-control" v-model="register.pass" @keydown.enter="register_f">
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-success" v-on:click="register_f">Register</button>
+                            <img src="Loading.gif" v-if="register.showLoading">
+                        </div>
+                    </b-popover>
+                </div>
+            </template>
+            <template v-else>
+                <div class="ml-auto">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <div class="nav-link text-light" style="display: inline-block">{{username}}</div>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary" v-on:click="logout">Log Out</button>
+                        </li>
+                    </ul>
+                </div>
+            </template>
+        </nav>
+        <template v-if="showDebugData">
+            Login username = {{login.user}}<br>
+            Login password = {{login.pass}}<br>
+            Login Response = {{login.response}}<br>
+            Register username = {{register.user}}<br>
+            Register password = {{register.pass}}<br>
+            Register Response = {{register.response}}<br>
+            Username = {{username}}<br>
+            User ID = {{userid}}<br>
+            Session ID = {{ssid}}<br>
+        </template>
+
+        <div class="container-fluid">
+            <div class="row my-4">
+                <div class="col"></div>
+                <div class="col-8">
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item" v-for="(tab, index) in tabs" v-on:click="changeActiveTab(tab.title)" v-if="tab.visible">
+                            <a class="nav-link" v-bind:class="{active: activeTabTitle == tab.title}" href="#">{{tab.title}}</a>
+                        </li>
+                        <div class = "ml-auto">
+                            <button class = "btn btn-info" v-on:click="showHelp = !showHelp">Help!</button>
+                        </div>
+                    </ul>
+
+                    <transition name="dropIn">
+                        <template v-if="showHelp">
+                            <div class="alert alert-info my-4" style="overflow: hidden">
+                                <button class="close" v-on:click="showHelp = !showHelp">&times;</button>
+                                <p>Hey there!</p>
+                                <p>If this is your first time around Majestic Cove, here are a few useful tips you should check out:</p>
+                                <ul>
+                                    <li>Search for word meanings in the <strong>Search</strong> tab.</li>
+                                    <li>Explore and learn new words in the <strong>Random</strong> tab</li>
+                                    <li>Add your own definitions in the <strong>Add definition</strong> tab.</li>
+                                    <li>Do you want to check your added definitions? See the <strong>My definitions</strong> tab. You may also delete previously added definitions here.</li>
+                                </ul>
+                                <p>Of course, you will require an account in order to access all of these features. You may register one right now, unless you already have one.</p>
+                                <span>That's all for now! Enjoy your stay.</span>
+                            </div>
+                        </template>
+                    </transition>
+
+                    <div class="my-4">
+                        <template v-if="activeTabTitle=='Search'">
+                            <backend_alert :data="searchWord"></backend_alert>
+                            <div class="input-group">
+                                <input @keydown.enter="getWordDefinitions" type="text" class="form-control" v-model="searchWord.word" placeholder="Word">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" v-on:click="getWordDefinitions">Search!</button>
+                                </div>
+                            </div>
+                            <word_post v-for="definition in searchWord.wordList" v-bind:definition="definition"></word_post>
+                        </template>
+                        <template v-else-if="activeTabTitle=='Random'">
+                            <backend_alert :data="randomWords"></backend_alert>
+                            <word_post v-for="definition in randomWords.wordList" v-bind:definition="definition"></word_post>
+                            <button class="btn btn-primary" @click="getRandomDefinitions()">Refresh</button>
+                        </template>
+                        <template v-if="loggedin">
+                            <template v-if="activeTabTitle=='My definitions'">
+                                <backend_alert :data="myDefinitions"></backend_alert>
+                                <word_post v-for="definition in myDefinitions.wordList" v-bind:definition="definition"></word_post>
+                            </template>
+                            <template v-else-if="activeTabTitle=='Add definition'">
+                                <backend_alert :data="addDefinition"></backend_alert>
+                                <input @keydown.enter="submitDefinition" type="text" class="form-control mb-2" v-model="addDefinition.word" placeholder="Word">
+                                <input @keydown.enter="submitDefinition" type="text" class="form-control mb-2" v-model="addDefinition.definition" placeholder="Definition">
+                                <button @click="submitDefinition" class="btn btn-primary">Submit!</button>
+                            </template>
+                        </template>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>

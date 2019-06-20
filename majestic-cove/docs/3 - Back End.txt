@@ -1,0 +1,137 @@
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Back End
+
+        All API's go here.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /Register
+
+    >Registers an user
+
+    Input:
+        user: string
+        pass: string
+
+    Output:
+        [!200] error message: string
+         [200] {userData}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /Login
+
+    >Logs in an user
+
+    Input:
+        user: string
+        pass: string
+
+    Output:
+        [!200] error message: string
+         [200] {userData}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /Logout
+
+    >Logs out an user and destroys the ssid
+
+    Input:
+        userid: string
+        ssid: string
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /addDefinition
+
+    >User adds a new word definition
+
+    Input:
+        userid: string
+        ssid: string
+        username: string
+        word: string
+        definition: string
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /showMyDefinitions
+
+    >Get user's definitions
+
+    Input:
+        userid: string
+        ssid: string
+
+    Output:
+        [!200] error message: string
+         [200] [definition]
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /deleteMyDefinition
+
+    >Deletes an user's own definition
+
+    Input:
+        userid: string
+        ssid: string
+        definitionid: string
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /getWordDefinitions
+
+    >Get all definitions for a given word. If there are no definitions, an auto-correct is attempted 
+        (hence why we also answer back with the 'word' string)
+
+    Input:
+        word: string
+
+    Output:
+        [!200] error message: string
+         [200] [definition]
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            /voteDefinition
+
+    >User thumbs up or thumbs down a definition
+
+    Input:
+        userid: string
+        ssid: string
+        definitionid: string
+        likes: boolean      // 1 for Like, -1 for Dislike
+        ownerUserId: string
+
+    Output:
+        [!200] error message: string
+         [200] {}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+    definition = {_id: string, userid: string, word: string, definition: string, rating: int, dislikes: int, username: string, userkarma: int}
+    userData = {ssid: string, userid: string, votes: [vote]}
+    vote = {definitionid: objectId, likes: int}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+[!200] - error during request
+ [200] - request succesful
+
+--------------------------------------------------------------------------------------------------------------------------------

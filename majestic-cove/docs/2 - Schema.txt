@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Database Schema
+
+        A transparent database should make things easier to work with, I reckon.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            Users
+
+    id*: objectId
+    username*: string
+    password: string
+    ssid: string
+    votes: arr [{definitionid: objectId, likes: int}] // likes = 1 or -1
+    karma: int          // Sum of all likes & dislikes of this user's definitions
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+            Definitions
+
+    id*: objectId
+    word: string
+    definition: string
+    username: string    // Author's
+    userid: objectId    // Author's
+    likes: int          // Amount of likes
+    dislikes: int       // Amount of dislikes
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+* - unique field
+
+--------------------------------------------------------------------------------------------------------------------------------

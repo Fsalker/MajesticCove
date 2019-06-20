@@ -1,0 +1,121 @@
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Back End
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+        [x]     /Register
+        [x]     /Login
+        [x]     /Logout
+        [x]     /addDefinition
+        [x]     /showMyDefinitions
+        [x]     /deleteMyDefinition
+        [x]     /getWordDefinitions
+        [x]     /voteDefinition
+            -> [ ] Dislikes (35 out of 45 have liked)
+        [x]     /getRandomWords
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                Front End
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+        [x]     /Register
+        [x]     /Login
+        [x]     /Logout
+        [x]     /addDefinition
+        [x]     /showMyDefinitions
+        [x]     /deleteMyDefinition
+        [x]     /getWordDefinitions
+        [x]     /voteDefinition
+        [x]     /getRandomWords
+        [ ]     Karma system:
+
+                    >The usernames are colored based on their user's karma
+
+                KARMA    -∞                   -10            -3            0            +3           +10                               +∞
+            ---------------------------------------------------------------------------------------------------------------------------------
+                COLOR                       wine red         red         black         green         gold
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+                                To-Do List
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+        [x] Make "My definitions" work
+        [x] Display a special message in case no results were found
+        [x] "cleanUp()" after user logs in / logs out
+            -> solved by implementing resetObject() and resetAlertObject()
+        [x] reset location to Search tab if user logs out while in loggedin-only tab
+        [x] Fix regex search word search (case insensitivity: searching "1" shows results for "123")
+            -> [x] Check that the same does not apply to passwords...
+        [x] Store Votes in the cookies
+
+        [ ] HTTPS: https://letsencrypt.org
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+                            Suggestions (by myself)
+
+        [x] Remove 'age' from front end & back end
+        [x] Modularise the back-end code (for the 3rd time)
+        [ ] Modularise Vue.methods: AJAX requests can be simplified!
+        [ ] Simplify login_1, login_2, login_3 into a single function
+        [ ] "Are you sure you want to remove the definition?"
+        [ ] Better Animations:
+            [ ] Animated word results (Search & Random)
+            [ ] Animated API responses
+        [ ] "Loading..." for every API call on the front end :D
+        [ ] When the database is dropped (reset), upload a dictionary with username 'admin' and 50+ votes
+        [ ] Limit IP address to 3 accounts created and 100 definitions uploaded per day
+        [ ] Auto suggest as the user types in a word to Search.
+        [ ] Fix the User's word with no matchings (Levenshtein distance)
+        [ ] 304 "Not Modified" HTTP response (aka cache)
+        [ ] "Help!" more intuitively:
+            [ ] "Type a word in to see its meaning..."
+            [ ] Tooltip when an user enters for the first time
+
+
+            Help pls
+        [ ] The app takes, like, a fraction of a second to load. HOWEVER, it is possible to see {{app.title}} instead of app.title's value, for just a moment, if you look reaaally carefully. How do we fix this? (could it be related to lifecycles?)
+        [ ] Add [{wordId: string, likes: boolean}] to 'votes' in User schema. But how???
+        [ ] If an error occurs during the server's runtime, the server dies.
+        [ ] "Super bug v1" (CTRL+F in the front end code)
+        [ ] "Super bug v2"
+                "events.js:183
+                      throw er; // Unhandled 'error' event
+                      ^
+
+                Error: EBADF: bad file descriptor, write"
+                    ...what? What???
+
+                    The server sometimes just prints this weird error before crashing :^D
+
+        [ ] Security against attackers & spammers. Any ideas? I thought of using Google's Captcha, but there still are workarounds even for that. Still, better than nothing, right?
+                    Is this normal? Should we try/catch, if possible, so as to avoid halting the server?
+        [x] Asynchronicity / "threading" issue
+            [x] ie 1: (happy scenario)
+                -user A registers with an username. the username is available. our request is pending...
+                -user B sends a /register with the same username. the username is available. we register this username (for user B)
+                -user A's request continues and we try registering. oh no! the username is already taken. but we've already checked that it was available!!! now we get an error, because username is unique. what do we do now?
+
+                    what. do. we. do. now?
+
+                Solved by using only 1 request :)
+
+            [x] ie 2: (less happy scenario)
+                -user sends requests A: thumbs up for definition X. the definition hasn't already been thumbed up. our request is pending...
+                -user sends requests B: thumbs up for definition X. the definition hasn't already been thumbed up. our request is pending...
+                -request A proceeds to +1 definition X. Now we won't be able to give thumbs up for definition X
+                -request B proceeds to +1 definition X, because we've already checked that the definition hadn't been thumbed up. Now we have two thumbs up from the same user. bad, bad, bad.
+
+                    what. do. we. do. now?
+
+                    ??????????????????????
+
+                Solved by refactoring "voteDefinition()"
+
+
+                
