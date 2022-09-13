@@ -14,6 +14,3 @@ Browse plenty of word definitions and add your own!
 2. Install dependencies: "npm install http" etc
 3. Configure the connection URL to your desired MongoDB database
 4. Start the web server: "npm start server.js"
-
-# Contact
-Feel free to mail me at andreiii500@yahoo.com.
